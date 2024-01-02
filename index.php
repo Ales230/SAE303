@@ -480,7 +480,7 @@
           <!-- Carte en haut -->
           <div class="row justify-content-center mt-4">
             <div class="card" style="width: 18rem;">
-              <img src="chemin/vers/photo1.jpg" class="card-img-top" alt="Photo 1">
+              <img src="Ressources/president.jpg" class="card-img-top" alt="Photo 1">
               <div class="card-body">
                 <h5 class="card-title">Jacques ADIT</h5>
                 <p class="card-text">Président</p>
@@ -492,7 +492,7 @@
           <div class="row justify-content-center mt-4">
             <div class="col-md-3">
               <div class="card" style="width: 18rem;">
-                <img src="chemin/vers/photo2.jpg" class="card-img-top" alt="Photo 2">
+                <img src="Ressources/mecanicien.jpg" class="card-img-top" alt="Photo 2">
                 <div class="card-body">
                   <h5 class="card-title">Igor CLEPLATTE</h5>
                   <p class="card-text">Mécanicien</p>
@@ -503,7 +503,7 @@
             
             <div class="col-md-3">
               <div class="card" style="width: 18rem;">
-                <img src="chemin/vers/photo3.jpg" class="card-img-top" alt="Photo 3">
+                <img src="Ressources/kevin.jpg" class="card-img-top" alt="Photo 3">
                 <div class="card-body">
                   <h5 class="card-title">Kévin SAITOUT</h5>
                   <p class="card-text">Chef Pilote</p>
@@ -513,7 +513,7 @@
         
             <div class="col-md-3">
               <div class="card" style="width: 18rem;">
-                <img src="chemin/vers/photo4.jpg" class="card-img-top" alt="Photo 4">
+                <img src="Ressources/secretaire.jpg" class="card-img-top" alt="Photo 4">
                 <div class="card-body">
                   <h5 class="card-title">Céline LAPLUME</h5>
                   <p class="card-text">Secrétaire</p>
@@ -523,7 +523,7 @@
         
             <div class="col-md-3">
               <div class="card" style="width: 18rem;">
-                <img src="chemin/vers/photo5.jpg" class="card-img-top" alt="Photo 5">
+                <img src="Ressources/tresoriere.jpg" class="card-img-top" alt="Photo 5">
                 <div class="card-body">
                   <h5 class="card-title">Claudine MONET</h5>
                   <p class="card-text">Trésorière</p>
@@ -537,7 +537,7 @@
           <div class="row justify-content-center mt-4">
             <div class="col-md-3">
               <div class="card" style="width: 18rem;">
-                <img src="chemin/vers/photo6.jpg" class="card-img-top" alt="Photo 6">
+                <img src="Ressources/justine.jpg" class="card-img-top" alt="Photo 6">
                 <div class="card-body">
                   <h5 class="card-title">Justine VOLAVU</h5>
                   <p class="card-text">Pilote ULM <br>Institutrice</p>
@@ -548,7 +548,7 @@
             <!-- Ajout de la dernière carte -->
             <div class="col-md-3">
               <div class="card" style="width: 18rem;">
-                <img src="chemin/vers/photo7.jpg" class="card-img-top" alt="Photo 7">
+                <img src="Ressources/alain.jpg" class="card-img-top" alt="Photo 7">
                 <div class="card-body">
                   <h5 class="card-title">Alain STRUMENT</h5>
                   <p class="card-text">Pilote ULM<br>Instructeur</p>
