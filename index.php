@@ -587,7 +587,81 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-    
+<?php
+class Form {
+    private $action;
+    private $method;
+    private $fields = [];
+
+    public function __construct($action = "", $method = "post") {
+        $this->action = $action;
+        $this->method = $method;
+    }
+
+    public function addField($label, $type, $name, $options = []) {
+        $this->fields[] = [
+            'label' => $label,
+            'type' => $type,
+            'name' => $name,
+            'options' => $options,
+        ];
+    }
+
+    public function getForm() {
+        $form = '<form action="' . $this->action . '" method="' . $this->method . '">';
+        foreach ($this->fields as $field) {
+            $form .= '<label>' . $field['label'] . ':</label><br>';
+            if ($field['type'] === 'select') {
+                $form .= '<select name="' . $field['name'] . '">';
+                foreach ($field['options'] as $option) {
+                    $form .= '<option value="' . $option . '">' . $option . '</option>';
+                }
+                $form .= '</select><br>';
+            } elseif ($field['type'] === 'checkbox') {
+                foreach ($field['options'] as $option) {
+                    $form .= '<input type="checkbox" name="' . $field['name'] . '[]" value="' . $option . '">' . $option . '<br>';
+                }
+            } elseif ($field['type'] === 'radio') {
+                foreach ($field['options'] as $option) {
+                    $form .= '<input type="radio" name="' . $field['name'] . '" value="' . $option . '" required>' . $option . ' ';
+                }
+                $form .= '<br>';
+            } else {
+                $form .= '<input type="' . $field['type'] . '" name="' . $field['name'] . '"';
+                if (isset($field['options']['required'])) {
+                    $form .= ' required';
+                }
+                $form .= '><br>';
+            }
+        }
+        $form .= '<input type="submit" value="Soumettre"></form>';
+        return $form;
+    }
+}
+
+$form = new Form("traitement.php");
+
+// Ajout des champs au formulaire
+$form->addField("Civilité", "radio", "civilite", ["M.", "Mme."]);
+$form->addField("Nom*", "text", "nom", ['required' => true]);
+$form->addField("Prénom*", "text", "prenom", ['required' => true]);
+$form->addField("Date de naissance", "date", "date_naissance");
+$form->addField("Adresse", "text", "numero_rue");
+$form->addField("Code postal", "number", "code_postal", ['placeholder' => 'code postal'] );
+$form->addField("Ville", "text", "ville", ['placeholder' => 'Ville']);
+$form->addField("Email*", "email", "email", ['required' => true]);
+$form->addField("Téléphone portable", "tel", "telephone", ['pattern' => '[0-9]{10}', 'title' => 'Le numéro de portable doit comporter 10 chiffres']);
+$form->addField("Activités demandées", "checkbox", "activites", ["Formation de pilote", "Baptême de l'air", "Réparation"]);
+
+echo $form->getForm(); // Affiche le formulaire
+?>
+
+
+
+            
+          </body>
+          </html>
+          
         
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
