@@ -338,7 +338,7 @@
         <h3>Un aérodrome privé avec la possibilité d'un hébergement dans un environnement exceptionnel</h3>
         <hr>
        
-        <img src="images/aerodrome.jpg" alt="Aérodrome">
+        <img id="ac2fl" src="Ressources/AC2FL.png" alt="Aérodrome">
       </section>
       
       <div class="container text-center mt-5">
@@ -352,7 +352,9 @@
                 </h2>
                 <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                     <div class="accordion-body">
-                        <strong>Image à inclure</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <img class="infrastructure" src="Ressources/baseulm.jpg" alt="image base ulm"> <br> <br>Explorez un espace aérien expansif qui offre une liberté totale pour les passionnés d'aviation. Notre domaine offre des possibilités infinies pour les pilotes, des décollages sans contraintes aux manœuvres aériennes créatives.
+
+Avec une surface totale de 45 hectares, notre site vous permet d'embrasser le ciel avec une perspective nouvelle et excitante. Que vous soyez débutant ou pilote expérimenté, notre domaine spacieux crée un environnement idéal pour perfectionner vos compétences et vivre des aventures aériennes mémorables.
                     </div>
                 </div>
             </div>
@@ -366,7 +368,9 @@
                 </h2>
                 <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                     <div class="accordion-body">
-                        <strong>Image à inclure</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <img class="infrastructure" src="Ressources/piste.jpg"  alt="image piste"> <br> <br> Avec des pistes de 800 et 450 mètres formant une configuration en X, notre site fournit des options diversifiées pour des décollages et atterrissages en toute sécurité.
+
+Cette disposition unique offre aux pilotes une flexibilité inégalée pour s'adapter à diverses conditions météorologiques et préférences de vol. Que vous soyez un novice cherchant à perfectionner vos compétences ou un pilote chevronné en quête de défis, nos deux pistes en X sont conçues pour répondre à toutes les aspirations aéronautiques.
                     </div>
                 </div>
             </div>
@@ -380,7 +384,9 @@
                 </h2>
                 <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                     <div class="accordion-body">
-                        <strong>Image à inclure</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <img class="infrastructure" src="Ressources/hydrosurface.jpg"  alt="imagehydrosurface"> <br>  <br> Explorez un espace idyllique où la piste d'eau s'étend sur 8 hectares, offrant des opportunités passionnantes pour les pilotes d'hydravions et d'ULM amphibies.
+
+Notre site exceptionnel vous permet de combiner la magie du vol avec l'adrénaline de l'atterrissage sur l'eau. Avec des installations modernes et un environnement naturel exceptionnel, notre hydrosurface crée une expérience inoubliable pour les amateurs d'aviation aquatique.
                     </div>
                 </div>
             </div>
@@ -394,7 +400,7 @@
                 </h2>
                 <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
                     <div class="accordion-body">
-                        <strong>Image à inclure</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <img class="infrastructure" src="Ressources/hangar.jpg"  alt="image hangar"> <br> <br> Nos trois hangars offrent une surface couverte de 4300 m², créant un espace ample et sécurisé pour le stockage et l'entretien de votre aéronef. Conçus pour répondre à divers besoins, ces hangars fournissent un refuge protecteur contre les intempéries et les éléments, assurant la préservation optimale de votre investissement. Avec un accès facile et rapide, notre équipe dédiée veille à la sécurité et à la fonctionnalité, offrant un environnement idéal pour les propriétaires d'ULM, d'avions légers et d'autres aéronefs.
                     </div>
                 </div>
             </div>
@@ -408,7 +414,9 @@
                 </h2>
                 <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
                     <div class="accordion-body">
-                        <strong>Image à inclure</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <img class="infrastructure" src="Ressources/admin.jpg"  alt="image administration"> <br>  <br>  Notre infrastructure moderne combine l'efficacité administrative avec la puissance de la technologie. Grâce à des installations informatisées, nous simplifions les processus, de l'inscription aux suivis de formation.
+
+Dans nos locaux administratifs, vous trouverez une équipe dévouée prête à vous guider à travers toutes les formalités, utilisant des systèmes informatisés pour assurer une gestion transparente et rapide. Que vous soyez étudiant, pilote ou visiteur, notre environnement administratif informatisé garantit une expérience fluide et sans tracas.
                     </div>
                 </div>
             </div>
@@ -422,7 +430,7 @@
                 </h2>
                 <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
                     <div class="accordion-body">
-                        <strong>Image à inclure</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <img class="infrastructure" src="Ressources/simulateur.jpg" alt="image administration"> <br> Découvrez une expérience d'apprentissage exceptionnelle dans notre salle de cours multimédia équipée d'un simulateur de vol ultramoderne. Grâce à des cours interactifs et des séances de simulation réalistes, vous développerez vos compétences de pilotage avec confiance.
                     </div>
                 </div>
             </div>
@@ -436,7 +444,9 @@
                 </h2>
                 <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
                     <div class="accordion-body">
-                        <strong>Image à inclure</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <img class="infrastructure" src="Ressources/atelier.jpg" alt="image atelier réparation"> <br> <br> Explorez notre atelier d'entretien et de réparation dédié aux ULM, offrant une expertise technique pour garantir la fiabilité et la performance optimale de votre aéronef ! Avec des installations modernes et une équipe qualifiée, nous sommes engagés à fournir des services d'entretien de première classe pour répondre à tous vos besoins.
+
+Notre atelier est équipé pour traiter une gamme variée de travaux, de l'entretien régulier aux réparations plus complexes. Nous comprenons l'importance de la sécurité et de la qualité, et notre équipe d'experts s'assurera que votre ULM est toujours prêt à prendre les airs en toute confiance.
                     </div>
                 </div>
             </div>
@@ -450,7 +460,9 @@
                 </h2>
                 <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEight">
                     <div class="accordion-body">
-                        <strong>Image à inclure</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <img class="infrastructure" src="Ressources/resto.jpg" alt="image restauration">  <br> <br> Profitez de nos capacités d'accueil et de restauration sur place, ajoutant une dimension confortable à votre expérience aéronautique ! Notre site est équipé pour vous offrir un espace accueillant où vous pourrez vous détendre, socialiser et savourer des moments après vos vols.
+
+Avec des installations de restauration sur place, nous veillons à ce que vous puissiez apprécier une variété de repas et de rafraîchissements sans quitter le site. Que vous soyez pilote, étudiant ou visiteur, nos capacités d'accueil créent une atmosphère conviviale où vous pouvez partager des anecdotes, échanger des expériences et célébrer votre passion commune pour l'aviation.
                     </div>
                 </div>
             </div>
@@ -464,9 +476,46 @@
                 </h2>
                 <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNine">
                     <div class="accordion-body">
-                        <strong>Image à inclure</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <img class="infrastructure" src="Ressources/wifi.jpg" alt="image wifi">  <br> <br> Profitez de la connectivité totale avec notre connexion Wi-Fi gratuite disponible sur toute la base ! Que vous soyez un étudiant en pause entre les cours, un pilote en attente de son vol, ou un visiteur explorant nos installations, notre réseau Wi-Fi gratuit vous permet de rester connecté où que vous soyez sur la base.
                     </div>
                 </div>
+
+                 <!-- Ten Accordion Item -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+                    Hébergement à la base ULM
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTen">
+                    <div class="accordion-body">
+                    <h4>Appartement</h4>
+                    <img class="infrastructure" src="Ressources/appart.jpg" alt="image appartement">  <br> <br> 
+                    
+                    <ul class="list-group">
+                        <li class="list-group-item">Équipé d’une kitchenette, d’une salle de bain (lavabo, douche, W.C.), télévision, lit en 140</li>
+                        <li class="list-group-item">Draps fournis.</li>
+                        <li class="list-group-item">Électricité en plus (compteur individuel). Caution 100 euros.</li>
+</ul>   <br>         
+<button type="button" class="btn btn-dark">Réserver</button>
+<br> <br>
+
+
+                    <h4>Chambre</h4>
+                    <img class="infrastructure" src="Ressources/chambre.jpg" alt="image chambre">
+                    <br> <br>
+                    <ul class="list-group">
+                      <li class="list-group-item">Équipée d’une salle de bain (lavabo, douche, W.C.), télévision, lit en 140</li>
+                      <li class="list-group-item">Draps fournis.</li>
+                      <li class="list-group-item">Caution 100 euros.</li>
+                    </ul> <br>
+                    <button type="button" class="btn btn-dark">Résever</button>
+
+
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -499,7 +548,7 @@
                 </div>
               </div>
             </div>
-            <!-- Répétez ce bloc trois fois pour les cartes suivantes -->
+          
             
             <div class="col-md-3">
               <div class="card" style="width: 18rem;">
