@@ -707,9 +707,67 @@ echo $form->getForm(); // Affiche le formulaire
 
 
 
-            
-          </body>
-          </html>
+<div class="container">
+    <section style="height:80px;"></section>
+	<div class="row" style="text-align:center;">
+		
+	</div>
+    <!----------- Footer ------------>
+    <footer class="footer-bs">
+        <div class="row">
+        	<div class="col-md-3 footer-brand animated fadeInLeft">
+            	<img id="logofooter" src="Ressources/AC2FL.png" alt="logo"> <br>
+                <p>L’Aéro-Club de Frotey-les-Lure appelé sous le terme ACF2L
+Il a pour origine la fusion de l’Aéro-Club de l’Ill siégeant à Vesoul et de l’Aéro-Club Marin-La-Meslée, siégeant à Frotey-les-Lure. au sein de l’Association des Aéro-Clubs de la Bourgogne-Franche-Comté.
+<br>L’aéro-club est une Association Loi 1901, agréée Jeunesse et Sports , adhérente à la FFULM  ( Fédération Française d’ULM) . Association enregistrée n°04674 - - Agrément n° AS70986858</p>
+                <p>© 2024 Aéro-Club de Frotey-les-Lure appelé sous le terme ACF2L, Tous les droits réservés</p>
+            </div>
+        	<div class="col-md-4 footer-nav animated fadeInUp">
+            	<h4>Menu —</h4>
+            	<div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Nature</a></li>
+                        <li><a href="#">Explores</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Advice</a></li>
+                    </ul>
+                </div>
+            	<div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        	<div class="col-md-2 footer-social animated fadeInDown">
+            	<h4>Follow Us</h4>
+            	<ul>
+                	<li><a href="#">Facebook</a></li>
+                	<li><a href="#">Twitter</a></li>
+                	<li><a href="#">Instagram</a></li>
+                	<li><a href="#">RSS</a></li>
+                </ul>
+            </div>
+        	<div class="col-md-3 footer-ns animated fadeInRight">
+            	<h4>Newsletter</h4>
+                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                <p>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search for...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                      </span>
+                    </div><!-- /input-group -->
+                 </p>
+            </div>
+        </div>
+    </footer>
+    <section style="text-align:center; margin:10px auto;"><p>Designed by <a href="http://princesargbah.me">Prince J. Sargbah</a></p></section>
+
+</div>
           
         
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
