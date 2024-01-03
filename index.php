@@ -45,13 +45,13 @@
                 <a class="nav-link" href="#evenement">Évènements</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Review</a>
+                <a class="nav-link" href="#avis">Avis</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Galerie</a>
+                <a class="nav-link" href="#galerie">Galerie</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact </a>
+                <a class="nav-link" href="#footer">Contact </a>
               </li>
               
             </ul>
@@ -708,64 +708,104 @@ echo $form->getForm(); // Affiche le formulaire
 
 
 <div class="container">
-    <section style="height:80px;"></section>
-	<div class="row" style="text-align:center;">
-		
-	</div>
-    <!----------- Footer ------------>
-    <footer class="footer-bs">
-        <div class="row">
-        	<div class="col-md-3 footer-brand animated fadeInLeft">
-            	<img id="logofooter" src="Ressources/AC2FL.png" alt="logo"> <br>
-                <p>L’Aéro-Club de Frotey-les-Lure appelé sous le terme ACF2L
-Il a pour origine la fusion de l’Aéro-Club de l’Ill siégeant à Vesoul et de l’Aéro-Club Marin-La-Meslée, siégeant à Frotey-les-Lure. au sein de l’Association des Aéro-Clubs de la Bourgogne-Franche-Comté.
-<br>L’aéro-club est une Association Loi 1901, agréée Jeunesse et Sports , adhérente à la FFULM  ( Fédération Française d’ULM) . Association enregistrée n°04674 - - Agrément n° AS70986858</p>
-                <p>© 2024 Aéro-Club de Frotey-les-Lure appelé sous le terme ACF2L, Tous les droits réservés</p>
-            </div>
-        	<div class="col-md-4 footer-nav animated fadeInUp">
-            	<h4>Menu —</h4>
-            	<div class="col-md-6">
-                    <ul class="pages">
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Nature</a></li>
-                        <li><a href="#">Explores</a></li>
-                        <li><a href="#">Science</a></li>
-                        <li><a href="#">Advice</a></li>
-                    </ul>
-                </div>
-            	<div class="col-md-6">
-                    <ul class="list">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contacts</a></li>
-                        <li><a href="#">Terms & Condition</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-        	<div class="col-md-2 footer-social animated fadeInDown">
-            	<h4>Follow Us</h4>
-            	<ul>
-                	<li><a href="#">Facebook</a></li>
-                	<li><a href="#">Twitter</a></li>
-                	<li><a href="#">Instagram</a></li>
-                	<li><a href="#">RSS</a></li>
-                </ul>
-            </div>
-        	<div class="col-md-3 footer-ns animated fadeInRight">
-            	<h4>Newsletter</h4>
-                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
-                <p>
-                    <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Search for...">
-                      <span class="input-group-btn">
-                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
-                      </span>
-                    </div><!-- /input-group -->
-                 </p>
-            </div>
+  <section style="height:80px;"></section>
+  <div class="row" style="text-align:center;">
+    <!-- Contenu de la page... -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-bs">
+    <div class="row">
+      <div class="col-md-3 footer-brand animated fadeInLeft">
+        <img id="logofooter" src="Ressources/AC2FL.png" alt="logo"> <br>
+        <p>Association enregistrée n°04674 - - Agrément n° AS70986858</p>
+        <p>© 2024 Aéro-Club de Frotey-les-Lure appelé sous le terme ACF2L, Tous les droits réservés</p>
+      </div>
+      <div class="col-md-4 footer-nav animated fadeInUp">
+        <h4>Menu </h4>
+        <div class="col-md-6">
+          <ul class="pages">
+            <li><a href="#acti">Nos activités</a></li>
+            <li><a href="#catégorie">Catégories d'ULM</a></li>
+            <li><a href="#moyens">Les Moyens Pédagogiques</a></li>
+            <li><a href="#equipe">L'Équipe</a></li>
+            <li><a href="#evenement">Évènements</a></li>
+            <li><a href="#">Avis</a></li>
+            <li><a href="#">Galerie</a></li>
+          </ul>
         </div>
-    </footer>
-    <section style="text-align:center; margin:10px auto;"><p>Designed by <a href="http://princesargbah.me">Prince J. Sargbah</a></p></section>
+        <div class="col-md-6">
+          <ul class="list">
+            <!-- Liens modaux -->
+            <li><a href="#" data-toggle="modal" data-target="#aProposModal">À propos</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#confidentialiteModal">Politique de confidentialité</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2 footer-social animated fadeInDown">
+        <h4>Suivez nous</h4>
+        <ul>
+          <!-- Liens vers les réseaux sociaux -->
+        </ul>
+      </div>
+      <div class="col-md-3 footer-ns animated fadeInRight">
+        <h4>Newsletter</h4>
+        <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+        <p>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+            </span>
+          </div><!-- /input-group -->
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal À propos -->
+  <div class="modal fade" id="aProposModal" tabindex="-1" role="dialog" aria-labelledby="aProposModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="aProposModalLabel">À propos</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Contenu du modal À propos... -->
+          <p>’Aéro-Club de Frotey-les-Lure appelé sous le terme ACF2L Il a pour origine la fusion de l’Aéro-Club de l’Ill siégeant à Vesoul et de l’Aéro-Club Marin-La-Meslée, siégeant à Frotey-les-Lure. au sein de l’Association des Aéro-Clubs de la Bourgogne-Franche-Comté.
+L’aéro-club est une Association Loi 1901, agréée Jeunesse et Sports , adhérente à la FFULM ( Fédération Française d’ULM) . </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Politique de confidentialité -->
+  <div class="modal fade" id="confidentialiteModal" tabindex="-1" role="dialog" aria-labelledby="confidentialiteModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confidentialiteModalLabel">Politique de confidentialité</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Contenu du modal Politique de confidentialité... -->
+          <p>Les informations personnelles concernant les visiteurs de notre site sont confidentielles, y compris leur identité. Nous nous engageons sur l'honneur à respecter les conditions légales de confidentialité applicables en France et a ne pas divulguer ces informations à des tiers.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
           

@@ -7,3 +7,4 @@ function showImage(src) {
 function hideImage() {
     document.getElementById('image-container').style.display = 'none';
 }
+
