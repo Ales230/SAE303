@@ -27,8 +27,8 @@
         }
     }
    
-    if(isset($_GET['id'])) {
-        $insertedId = $_GET['id'];
+    if(isset($_GET['id_adherent'])) {
+        $insertedId = $_GET['id_adherent'];
         // Afficher l'identifiant de l'adhérent
         echo "<p>Votre numéro d'adhérent est : " . htmlspecialchars($insertedId) . "</p>";
         

@@ -9,8 +9,8 @@
 <body>
     <h2>Connexion</h2>
     <form action="authentification.php" method="post">
-        <label for="id">Numéro d'adhérent:</label>
-        <input type="number" id="id" name="id" required><br>
+        <label for="id_adherent">Numéro d'adhérent:</label>
+        <input type="number" id="id_adherent" name="id_adherent" required><br>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br>
