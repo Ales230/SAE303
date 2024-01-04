@@ -10,31 +10,33 @@
     <title>Formulaire d'adhésion</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand"   img src="Ressources/A2CFL.png" alt="logo" ></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#acti">Nos Activités</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link " href="#catégorie">
-                  Catégories d'ULM 
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#"></a></li>
-                  <li><a class="dropdown-item" href="#"></a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#"></a></li>
-                </ul>
-              </li>
+            <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="index.php">
+        <img src="Ressources/AC2FL.png" alt="Logo" width="50" height="50">
+    </a>
+</li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#acti">Nos Activités</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#catégorie">
+                        Catégories d'ULM 
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#"></a></li>
+                        <li><a class="dropdown-item" href="#"></a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#"></a></li>
+                    </ul>
+                </li>
               <li class="nav-item">
                 <a class="nav-link" href="#moyens">Les Moyens Pédagogiques</a>
               </li>
@@ -97,28 +99,28 @@
       
       
 
-      <div class="container my-5">
-        <div class="row">
-          <div class="col-md-6">
-            <h2 id="acti" class="text-center">Nos activités</h2>
+      <div class="container my-5 mx-auto">
+    <div class="row text-center">
+        <div class="col-md-6">
+            <h2 id="acti">Nos activités</h2>
             <p>
-              L'aéro-club est une association loi 1901, agréée Jeunesse et Sports, adhérente à la FFULM (Fédération Française d'ULM). Elle est enregistrée sous le numéro 04674 et agréée sous le numéro AS70986858. Son siège social est situé au 62, avenue de la République, 70200 Lure.
+                L'aéro-club est une association loi 1901, agréée Jeunesse et Sports, adhérente à la FFULM (Fédération Française d'ULM). Elle est enregistrée sous le numéro 04674 et agréée sous le numéro AS70986858. Son siège social est situé au 62, avenue de la République, 70200 Lure.
             </p><br>
-          </div>
-          
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item">Formation de pilotes et d'instructeurs</li>
-              <li class="list-group-item">Baptêmes de l'air</li>
-              <li class="list-group-item">Maintenance des ULM (moteur, structure)</li>
-              <li class="list-group-item">Montage des ULM et de tout instrument de navigation (compas, radio, transpondeur)</li>
-              <li class="list-group-item">Service de restauration rapide</li>
-              <li class="list-group-item">Hébergement (trois studios et six chambres pour les élèves stagiaires)</li>
-              <li class="list-group-item">Location d'emplacement ULM dans des hangars pour les particuliers</li>
-            </ul>
-          </div>
         </div>
-      </div>
+        <div class="col-md-6">
+            <ul class="list-group">
+                <li class="list-group-item">Formation de pilotes et d'instructeurs</li>
+                <li class="list-group-item">Baptêmes de l'air</li>
+                <li class="list-group-item">Maintenance des ULM (moteur, structure)</li>
+                <li class="list-group-item">Montage des ULM et de tout instrument de navigation (compas, radio, transpondeur)</li>
+                <li class="list-group-item">Service de restauration rapide</li>
+                <li class="list-group-item">Hébergement (trois studios et six chambres pour les élèves stagiaires)</li>
+                <li class="list-group-item">Location d'emplacement ULM dans des hangars pour les particuliers</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
       
       <h1 id="catégorie"> Les catégories d'ULM</h1>
       <hr>
@@ -338,7 +340,7 @@
         <h3>Un aérodrome privé avec la possibilité d'un hébergement dans un environnement exceptionnel</h3>
         <hr>
        
-        <img id="ac2fl" src="Ressources/AC2FL.png" alt="Aérodrome">
+        
       </section>
       
       <div class="container text-center mt-5">

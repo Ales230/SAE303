@@ -39,6 +39,10 @@ hr {
     width: 40%;
 }
 
+#center {
+	text-align: center;
+}
+
 .footer-bs {
     background-color: #3c3d41;
 	padding: 60px 40px;
