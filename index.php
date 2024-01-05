@@ -42,7 +42,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#moyens">Les Moyens</a>
+          <a class="nav-link" href="#moyens">Les Moyens Pédagogiques</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#equipe">L'Équipe</a>
