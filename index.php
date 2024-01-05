@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,60 +11,73 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="index.php">
-        <img src="Ressources/AC2FL.png" alt="Logo" width="50" height="50">
-    </a>
-</li>
+  <div class="container-fluid">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Ajout d'une icône Bootstrap -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.php">
+            <img src="Ressources/AC2FL.png" alt="Logo" width="50" height="50">
+          </a>
+        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#acti">Nos Activités</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link " href="#catégorie">
-                        Catégories d'ULM 
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#"></a></li>
-                        <li><a class="dropdown-item" href="#"></a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#"></a></li>
-                    </ul>
-                </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#moyens">Les Moyens Pédagogiques</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#equipe">L'Équipe</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#evenement">Évènements</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#avis">Avis</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#galerie">Galerie</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#footer">Contact </a>
-              </li>
-              
-            </ul>
-           
-            <form class="d-flex">
-              <input class="form-control me-2"+ type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+        <li class="nav-item">
+          <a class="nav-link" href="#acti">Nos Activités</a>
+        </li>
+
+        <li class="nav-item ">
+          <a class="nav-link " href="#catégorie">
+            Catégories d'ULM
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#moyens">Les Moyens Pédagogiques</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#equipe">L'Équipe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#evenement">Évènements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#avis">Avis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#galerie">Galerie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Contact</a>
+        </li>
+
+        <li class="nav-item">
+        <button type="button" class="btn btn-dark" id="toggleBtn">
+                            <!-- Utilisation du texte unicode pour les icônes -->
+                            🌙 Mode Sombre
+                        </button>
+                    </li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
      
       <div class="container-fluid p-0" data-section="slide03">
         <div id="blog-carousel" class="carousel slide" data-ride="carousel" data-bs-ride="carousel">
@@ -107,7 +120,7 @@
                 L'aéro-club est une association loi 1901, agréée Jeunesse et Sports, adhérente à la FFULM (Fédération Française d'ULM). Elle est enregistrée sous le numéro 04674 et agréée sous le numéro AS70986858. Son siège social est situé au 62, avenue de la République, 70200 Lure.
             </p><br>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-bs-theme="dark" >
             <ul class="list-group">
                 <li class="list-group-item">Formation de pilotes et d'instructeurs</li>
                 <li class="list-group-item">Baptêmes de l'air</li>
@@ -125,7 +138,7 @@
       <h1 id="catégorie"> Les catégories d'ULM</h1>
       <hr>
 
-      <div  class="container">
+      <div  class="container" data-bs-theme="dark" >
         <div class="row justify-content-center mt-4">
             <!-- First Card -->
             <div class="col-md-3 mb-4">
@@ -343,7 +356,7 @@
         
       </section>
       
-      <div class="container text-center mt-5">
+      <div class="container text-center mt-5" data-bs-theme="dark" >
         <div class="accordion" id="accordionPanelsStayOpenExample" style="max-width: 1000px; margin: 0 auto;">
             <!-- First Accordion Item -->
             <div class="accordion-item">
