@@ -148,7 +148,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Le paramoteur</h5>
                         <p class="card-text">Un ULM paramoteur est un aéronef sustenté par une voilure souple, de type parachute.</p>
-                        <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight1">En savoir plus</button>
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight1">En savoir plus</button>
     
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel1">
                             <div class="offcanvas-header">
@@ -180,7 +180,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Le pendulaire</h5>
                         <p class="card-text">Un ULM pendulaire est un aéronef sustenté par une voilure rigide sous laquelle est généralement accrochée un chariot motorisé.</p>
-                        <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight2">En savoir plus</button>
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight2">En savoir plus</button>
     
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel2">
                             <div class="offcanvas-header">
@@ -219,7 +219,7 @@
                         <h5 class="card-title">Le multiaxes</h5>
                         <p class="card-text">Un ULM multiaxes est un aéronef sustenté par
                             une voilure fixe.</p>
-                        <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight3" aria-controls="offcanvasRight3">En savoir plus</button>
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight3" aria-controls="offcanvasRight3">En savoir plus</button>
     
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight3" aria-labelledby="offcanvasRightLabel3">
                             <div class="offcanvas-header">
@@ -258,7 +258,7 @@
                     <div class="card-body">
                         <h5 class="card-title">L’autogire ultraléger</h5>
                         <p class="card-text">Appareil volant dont le rotor assure la sustentation (et non la propulsion, comme dans l'hélicoptère).</p>
-                        <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight4" aria-controls="offcanvasRight4">En savoir plus</button>
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight4" aria-controls="offcanvasRight4">En savoir plus</button>
     
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight4" aria-labelledby="offcanvasRightLabel4">
                             <div class="offcanvas-header">
@@ -291,7 +291,7 @@
                     <div class="card-body">
                         <h5 class="card-title">L’aérostat ultraléger</h5>
                         <p class="card-text">Véhicule aérien sans moteur plus léger que l'air. Les aérostats ultra-légers sont caractérisés par leur poids extrêmement faible et leur capacité à rester en suspension dans l'air en exploitant la différence de densité entre l'hélium ou l'hydrogène.</p>
-                        <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight5" aria-controls="offcanvasRight5">En savoir plus</button>
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight5" aria-controls="offcanvasRight5">En savoir plus</button>
     
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight5" aria-labelledby="offcanvasRightLabel5">
                             <div class="offcanvas-header">
@@ -320,7 +320,7 @@
                     <div class="card-body">
                         <h5 class="card-title">L’hélicoptère ultraléger</h5>
                         <p class="card-text">L'hélicoptère ultra léger est un hélico monomoteur dont la puissance maximale est inférieure ou égale à 116 CV (monoplace) ou à 143 CV (biplaces).</p>
-                        <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight6" aria-controls="offcanvasRight6">En savoir plus</button>
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight6" aria-controls="offcanvasRight6">En savoir plus</button>
     
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight6" aria-labelledby="offcanvasRightLabel6">
                             <div class="offcanvas-header">
@@ -513,7 +513,7 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
                         <li class="list-group-item">Draps fournis.</li>
                         <li class="list-group-item">Électricité en plus (compteur individuel). Caution 100 euros.</li>
 </ul>   <br>         
-<button type="button" class="btn btn-dark">Réserver</button>
+<button type="button" class="btn btn-secondary">Réserver</button>
 <br> <br>
 
 
@@ -525,7 +525,7 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
                       <li class="list-group-item">Draps fournis.</li>
                       <li class="list-group-item">Caution 100 euros.</li>
                     </ul> <br>
-                    <button type="button" class="btn btn-dark">Résever</button>
+                    <button type="button" class="btn btn-secondary">Résever</button>
 
 
 
