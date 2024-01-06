@@ -772,7 +772,7 @@ echo $form->getForm(); // Affiche le formulaire
         </div>
         <div class="modal-body">
           <!-- Contenu du modal À propos... -->
-          <p>’Aéro-Club de Frotey-les-Lure appelé sous le terme ACF2L Il a pour origine la fusion de l’Aéro-Club de l’Ill siégeant à Vesoul et de l’Aéro-Club Marin-La-Meslée, siégeant à Frotey-les-Lure. au sein de l’Association des Aéro-Clubs de la Bourgogne-Franche-Comté.
+          <p>L’Aéro-Club de Frotey-les-Lure appelé sous le terme ACF2L Il a pour origine la fusion de l’Aéro-Club de l’Ill siégeant à Vesoul et de l’Aéro-Club Marin-La-Meslée, siégeant à Frotey-les-Lure. au sein de l’Association des Aéro-Clubs de la Bourgogne-Franche-Comté.
 L’aéro-club est une Association Loi 1901, agréée Jeunesse et Sports , adhérente à la FFULM ( Fédération Française d’ULM) . </p>
         </div>
         <div class="modal-footer">
