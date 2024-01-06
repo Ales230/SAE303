@@ -54,7 +54,7 @@
           <a class="nav-link" href="#avis">Avis</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#galerie">Galerie</a>
+          <a class="nav-link" href="#galerie">Localisation</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#footer">Contact</a>
@@ -66,6 +66,7 @@
                             🌙 Mode Sombre
                         </button>
                     </li>
+                    <iframe id="widget_autocomplete_preview"  width="300" height="50" frameborder="0" src="https://meteofrance.com/widget/prevision/702600##081178"> </iframe>
       </ul>
 
       <form class="d-flex">
@@ -664,6 +665,21 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+
+         
+	
+	<!-- Map -->
+  <h1 id="equipe">Localisez Nous</h1>
+        <br>
+		<p>Notre association se situe à proximité de Frotey-Les-Lures</p>
+    <hr>
+	</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.500055775827!2d6.545493728266803!3d47.655289912740024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479243ff7a705239%3A0x4d2f79be7103e0b6!2sA%C3%A9ro-club%20de%20Flotey-Les-Lures!5e0!3m2!1sfr!2sfr!4v1704562011553!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				
+		</div>
+	</section>
+	<!--Map Ends -->
+
 <?php
 require_once("form.php");
 require_once("formvalidator.php");
@@ -788,7 +804,7 @@ L’aéro-club est une Association Loi 1901, agréée Jeunesse et Sports , adhé
   </div>
 
 </div>
-          
+<script src="https://cdn.websitepolicies.io/lib/cconsent/cconsent.min.js" defer></script><script>window.addEventListener("load",function(){window.wpcb.init({"border":"thin","corners":"small","colors":{"popup":{"background":"#222222","text":"#ffffff","border":"#b3d0e4"},"button":{"background":"#b3d0e4","text":"#000000"}},"content":{"message":"Le site web de l'Association AC2FL utilise des cookies pour améliorer votre expérience. En continuant à naviguer sur notre site, vous acceptez notre utilisation des cookies conformément à notre politique de cookies","link":"En savoir plus","button":"J'accepte"}})});</script>      
         
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
