@@ -1,13 +1,10 @@
 <?php
 session_start(); // Démarrer la session
-if (isset($_SESSION["id_adherent"])) {
-    $id_adherent = $_SESSION["id_adherent"];
-} else {
-    // Rediriger l'utilisateur vers la page d'authentification si l'ID adhérent n'est pas défini
-    header("Location: login.php");
+if (!(isset($_SESSION['role']) && $_SESSION['role'] === 'membre')) {
+    // Rediriger vers une page d'erreur ou une page non autorisée
+    header('Location: login.php');
     exit();
 }
-$_SESSION["id_adherent"] = $id_adherent; // Stockez l'ID de l'adhérent dans la session
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -16,6 +13,8 @@ $dbname = "bdl-ac2fl";
 // Connexion à la base de données
 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$id_adherent = $_SESSION['id_adherent'];
+
 
 // Récupération des données de la table bdl_avions
 $stmt = $conn->query("SELECT id_avion, type FROM bdl_avions");
@@ -118,6 +117,8 @@ $("#date_fin").datepicker({
 
 
     </script>
+
+
 </body>
 </html>
 

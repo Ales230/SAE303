@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,32 +11,45 @@
     <h1>Confirmation d'adhésion</h1>
     <p>Merci pour votre adhésion. Voici les informations que vous avez saisies :</p>
     <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        echo "<p><strong>Civilité:</strong> " . htmlspecialchars($_POST['civilite']) . "</p>";
-        echo "<p><strong>Nom:</strong> " . htmlspecialchars($_POST['nom']) . "</p>";
-        echo "<p><strong>Prénom:</strong> " . htmlspecialchars($_POST['prenom']) . "</p>";
-        echo "<p><strong>Date de naissance:</strong> " . htmlspecialchars($_POST['date_naissance']) . "</p>";
-        echo "<p><strong>Adresse:</strong> " . htmlspecialchars($_POST['numero_rue']) . ", " . htmlspecialchars($_POST['code_postal']) . " " . htmlspecialchars($_POST['ville']) . "</p>";
-        echo "<p><strong>Situation familiale:</strong> " . htmlspecialchars($_POST['situation_familiale']) . "</p>";
-        echo "<p><strong>Date de début:</strong> " . htmlspecialchars($_POST['date_debut']) . "</p>";
-        echo "<p><strong>Date de fin:</strong> " . htmlspecialchars($_POST['date_fin']) . "</p>";
-        echo "<p><strong>Email:</strong> " . htmlspecialchars($_POST['email']) . "</p>";
-        echo "<p><strong>Téléphone portable:</strong> " . htmlspecialchars($_POST['telephone']) . "</p>";
-        echo "<p><strong>Nombre d'enfants mineurs:</strong> " . htmlspecialchars($_POST['enfants_mineurs']) . "</p>";
-        echo "<p><strong>Nombre d'enfants majeurs:</strong> " . htmlspecialchars($_POST['enfants_majeurs']) . "</p>";
-        echo "<p><strong>Parents à charge (cause du handicap):</strong> " . htmlspecialchars($_POST['parents_handicapes']) . "</p>";        
-        if(isset($_POST['activites'])) {
-            echo "<p><strong>Activités demandées:</strong> " . implode(', ', $_POST['activites']) . "</p>";
+    // Vérifiez si les valeurs du formulaire sont présentes dans la session
+    if (isset($_SESSION['form_values'])) {
+        $formValues = $_SESSION['form_values'];
+
+        // Vérifie chaque valeur avant de l'afficher
+        $hasData = false;
+        foreach ($formValues as $key => $value) {
+            if (!empty($value)) {
+                if ($key !== 'activites') {
+                    echo "<p><strong>$key:</strong> " . (is_array($value) ? implode(', ', $value) : htmlspecialchars($value)) . "</p>";
+                    $hasData = true;
+                }
+            }
         }
+
+        // Affiche "Aucune information saisie" si aucun champ n'est rempli
+        if (!$hasData) {
+            echo "Aucune information saisie.";
+        }
+
+        // Affichage des activités demandées si elles ont été sélectionnées
+        if (isset($formValues['activites']) && is_array($formValues['activites']) && count($formValues['activites']) > 0) {
+            echo "<p><strong>Activités demandées :</strong> " . implode(', ', $formValues['activites']) . "</p>";
+        } else {
+            echo "<p><strong>Activités demandées :</strong> Aucune activité sélectionnée.</p>";
+        }
+
+        // Nettoyer les valeurs stockées dans la session une fois affichées
+        unset($_SESSION['form_values']);
+    } else {
+        echo "Aucune information de formulaire n'est disponible.";
     }
-   
+
+    // Vérifier s'il y a un ID d'adhérent passé dans l'URL
     if(isset($_GET['id_adherent'])) {
         $insertedId = $_GET['id_adherent'];
         // Afficher l'identifiant de l'adhérent
         echo "<p>Votre numéro d'adhérent est : " . htmlspecialchars($insertedId) . "</p>";
-        
     }
     ?>
-    
 </body>
 </html>
