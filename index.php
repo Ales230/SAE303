@@ -140,38 +140,42 @@
       <hr>
 
       <div  class="container" data-bs-theme="dark" >
-        <div class="row justify-content-center mt-4">
+      <div class="row justify-content-center mt-6">
             <!-- First Card -->
-            <div class="col-md-3 mb-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="Ressources/paramoteur.jpg" class="card-img-top" alt="image paramoteur">
+            <div class="col-md-3 mb-6">
+                <div class="card" style="width: 18rem; height: 32.9rem;">
+                    <img src="Ressources/autogire.jpg" class="card-img-top" alt="image autogire">
                     <div class="card-body">
-                        <h5 class="card-title">Le paramoteur</h5>
-                        <p class="card-text">Un ULM paramoteur est un aéronef sustenté par une voilure souple, de type parachute.</p>
-                        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight1">En savoir plus</button>
+                        <h5 class="card-title">L’autogire ultraléger</h5>
+                        <span class="badge rounded-pill text-bg-success">Disponible</span> <br>
+
+                        <p class="card-text">Appareil volant dont le rotor assure la sustentation (et non la propulsion, comme dans l'hélicoptère).</p>
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight4" aria-controls="offcanvasRight4">En savoir plus</button>
     
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel1">
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight4" aria-labelledby="offcanvasRightLabel4">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasRightLabel1">Le paramoteur</h5>
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel4">L’autogire ultraléger</h5>
                                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body small">
-                                Un ULM paramoteur est un aéronef sus-
-                                tenté par une voilure souple, de type
-                                parachute. Il répond aux conditions techniques suivantes :
-                                La puissance maximale continue est
-                                inférieure ou égale à 81 cv. pour les
-                                monoplaces et 102 cv. pour les
-                                biplaces. La vitesse minimum de vol
-                                est inférieure ou égale à 65 km/h.
-                                La masse maximale est inférieure ou
-                                égale à 300 kg pour les monoplaces et
-                                à 450 kg pour les biplaces.
+                                Un autogire ultra-léger répond aux
+                                conditions techniques suivantes :
+                                k La puissance maximale continue est inférieure ou
+                                égale à 102 cv. pour les monoplaces et 122 cv. pour
+                                les biplaces. La vitesse minimum de vol est inférieure
+                                ou égale à 65 km/h.
+                                k La masse maximale est inférieure ou égale à 300 kg
+                                pour les monoplaces et à 450 kg pour les biplaces.
+                                k La charge rotorique à la masse
+                                maximale est comprise entre
+                                4,5 et 12kg/m2
+                                .
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        
     
             <!-- Second Card -->
             <div class="col-md-3 mb-4">
@@ -179,6 +183,8 @@
                     <img src="Ressources/pendulaire.jpg" class="card-img-top" alt="image pendulaire">
                     <div class="card-body">
                         <h5 class="card-title">Le pendulaire</h5>
+                        <span class="badge rounded-pill text-bg-success">Disponible</span> <br>
+
                         <p class="card-text">Un ULM pendulaire est un aéronef sustenté par une voilure rigide sous laquelle est généralement accrochée un chariot motorisé.</p>
                         <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight2">En savoir plus</button>
     
@@ -213,12 +219,14 @@
     
             <!-- Third Card -->
             <div class="col-md-3 mb-4">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem; height: 32.9rem;">
                     <img src="Ressources/multiaxes.jpg" class="card-img-top" alt="image multiaxes">
                     <div class="card-body">
                         <h5 class="card-title">Le multiaxes</h5>
+                        <span class="badge rounded-pill text-bg-success">Disponible</span> <br>
+
                         <p class="card-text">Un ULM multiaxes est un aéronef sustenté par
-                            une voilure fixe.</p>
+                            une voilure fixe.</p><br><br>
                         <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight3" aria-controls="offcanvasRight3">En savoir plus</button>
     
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight3" aria-labelledby="offcanvasRightLabel3">
@@ -253,31 +261,33 @@
         <div class="row justify-content-center mt-4">
             <!-- Fourth Card -->
             <div class="col-md-3 mb-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="Ressources/autogire.jpg" class="card-img-top" alt="image autogire">
+                <div class="card" style="width: 18rem;  height: 38.8rem;">
+                    <img src="Ressources/paramoteur.jpg" class="card-img-top" alt="image paramoteur">
                     <div class="card-body">
-                        <h5 class="card-title">L’autogire ultraléger</h5>
-                        <p class="card-text">Appareil volant dont le rotor assure la sustentation (et non la propulsion, comme dans l'hélicoptère).</p>
-                        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight4" aria-controls="offcanvasRight4">En savoir plus</button>
+                        <h5 class="card-title">Le paramoteur</h5>
+                        <span class="badge rounded-pill text-bg-danger">Non disponible</span>
+
+                        
+                        <p class="card-text">Un ULM paramoteur est un aéronef sustenté par une voilure souple, de type parachute.</p><br><br><br><br><br>
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight1">En savoir plus</button>
     
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight4" aria-labelledby="offcanvasRightLabel4">
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel1">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasRightLabel4">L’autogire ultraléger</h5>
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel1">Le paramoteur</h5>
                                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body small">
-                                Un autogire ultra-léger répond aux
-                                conditions techniques suivantes :
-                                k La puissance maximale continue est inférieure ou
-                                égale à 102 cv. pour les monoplaces et 122 cv. pour
-                                les biplaces. La vitesse minimum de vol est inférieure
-                                ou égale à 65 km/h.
-                                k La masse maximale est inférieure ou égale à 300 kg
-                                pour les monoplaces et à 450 kg pour les biplaces.
-                                k La charge rotorique à la masse
-                                maximale est comprise entre
-                                4,5 et 12kg/m2
-                                .
+                                Un ULM paramoteur est un aéronef sus-
+                                tenté par une voilure souple, de type
+                                parachute. Il répond aux conditions techniques suivantes :
+                                La puissance maximale continue est
+                                inférieure ou égale à 81 cv. pour les
+                                monoplaces et 102 cv. pour les
+                                biplaces. La vitesse minimum de vol
+                                est inférieure ou égale à 65 km/h.
+                                La masse maximale est inférieure ou
+                                égale à 300 kg pour les monoplaces et
+                                à 450 kg pour les biplaces.
                             </div>
                         </div>
                     </div>
@@ -290,6 +300,7 @@
                     <img src="Ressources/aerostat.jpg" class="card-img-top" alt="image aérostat">
                     <div class="card-body">
                         <h5 class="card-title">L’aérostat ultraléger</h5>
+                        <span class="badge rounded-pill text-bg-danger">Non disponible</span>
                         <p class="card-text">Véhicule aérien sans moteur plus léger que l'air. Les aérostats ultra-légers sont caractérisés par leur poids extrêmement faible et leur capacité à rester en suspension dans l'air en exploitant la différence de densité entre l'hélium ou l'hydrogène.</p>
                         <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight5" aria-controls="offcanvasRight5">En savoir plus</button>
     
@@ -315,11 +326,12 @@
     
             <!-- Sixth Card -->
             <div class="col-md-3 mb-4">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem; height: 38.8rem;">
                     <img src="Ressources/helico.jpg" class="card-img-top" alt="image hélico ultraléger">
                     <div class="card-body">
                         <h5 class="card-title">L’hélicoptère ultraléger</h5>
-                        <p class="card-text">L'hélicoptère ultra léger est un hélico monomoteur dont la puissance maximale est inférieure ou égale à 116 CV (monoplace) ou à 143 CV (biplaces).</p>
+                        <span class="badge rounded-pill text-bg-danger">Non disponible</span>
+                        <p class="card-text">L'hélicoptère ultra léger est un hélico monomoteur dont la puissance maximale est inférieure ou égale à 116 CV (monoplace) ou à 143 CV (biplaces).</p><br><br><br>
                         <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight6" aria-controls="offcanvasRight6">En savoir plus</button>
     
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight6" aria-labelledby="offcanvasRightLabel6">
