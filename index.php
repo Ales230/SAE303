@@ -783,7 +783,7 @@ L’aéro-club est une Association Loi 1901, agréée Jeunesse et Sports , adhé
   </div>
 
   <!-- Modal Politique de confidentialité -->
-  <div class="modal fade" id="confidentialiteModal" tabindex="-1" role="dialog" aria-labelledby="confidentialiteModalLabel" aria-hidden="true">
+  <div class="modal fade" id="confidentialiteModal" tabindex="-1" role="dialog" aria-labelledby="confidentialiteModalLabel" aria-hidden="true" >
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
