@@ -688,7 +688,7 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
           
           </div> <br> <br>
          
-          <h1 class="titres" id="evenement">Évènements à venir</h1>
+          <h1 class="titres" id="evenement">Évènements ULM</h1>
           <hr>
 
           <div  class="container" data-bs-theme="dark" >
@@ -976,8 +976,8 @@ echo $form->getForm(); // Affiche le formulaire
             <li><a href="#moyens">Les Moyens Pédagogiques</a></li>
             <li><a href="#equipe">L'Équipe</a></li>
             <li><a href="#evenement">Évènements</a></li>
-            <li><a href="#">Avis</a></li>
-            <li><a href="#">Galerie</a></li>
+            <li><a href="#tarifs">Tarifs</a></li>
+            <li><a href="#localisation">Localisation</a></li>
           </ul>
         </div>
         <div class="col-md-6">
