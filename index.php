@@ -65,13 +65,11 @@
                             <!-- Utilisation du texte unicode pour les icônes -->
                             🌙 Mode Sombre
                         </button>
-                    </li>
-                    <iframe id="widget_autocomplete_preview"  width="300" height="50" frameborder="0" src="https://meteofrance.com/widget/prevision/702600##081178"> </iframe>
+                  
       </ul>
 
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+      <iframe id="widget_autocomplete_preview"  width="300" height="50" frameborder="0" src="https://meteofrance.com/widget/prevision/702600##081178"> </iframe>
       </form>
     </div>
   </div>
