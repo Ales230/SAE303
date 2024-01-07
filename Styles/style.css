@@ -24,7 +24,10 @@ body.dark-mode {
 	background-color: #ffffff;
 	color: #000000;
   }
-  
+.container-fluid{
+  margin-top: 0px;
+}
+
   @media (prefers-color-scheme: dark) {
 	.btn-primary {
 	  color: #000000;
@@ -35,7 +38,7 @@ body.dark-mode {
 	  background-color: #000000;
 	  color: #ffffff;
 	}
-  }
+}
 
 .titres{
 
@@ -83,6 +86,44 @@ hr {
 #center {
 	text-align: center;
 }
+
+
+
+/* Ajoutez ces styles pour personnaliser l'apparence du texte dans la carousel-caption */
+.carousel-caption {
+  
+  height: 7rem;
+  background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+  color: #fff; /* Couleur du texte */
+  padding: 10px !important; /* Marge intérieure */
+  border-radius: 10px; /* Coins arrondis */
+  text-align: center; /* Centrer le texte */
+  position: absolute; /* Position absolue pour le positionnement */
+  bottom: 20px; /* Espacement du bas */
+  position: absolute; /* Position absolue pour le positionnement */
+  top: 40%; /* Position verticale à 50% */
+  left: 50%; /* Centrer horizontalement */
+  transform: translateX(-50%); /* Ajustement pour centrer horizontalement */
+  opacity: 0; /* Initialiser l'opacité à 0 */
+}
+
+/* Ajoutez ces styles pour l'animation de fondu en montée */
+.carousel-item.active .carousel-caption {
+  animation: fadeInUp 1s ease-in-out forwards; /* Nom de l'animation, durée, et mode de temporisation */
+}
+
+@keyframes fadeInUp {
+  from {
+      transform: translateY(50px); /* Position de départ */
+      opacity: 0; /* Opacité initiale */
+  }
+  to {
+      transform: translateY(0); /* Position finale */
+      opacity: 1; /* Opacité finale */
+  }
+}
+
+
 
 
 .footer-bs {
@@ -322,11 +363,12 @@ hr {
 }
 .disp_interactif{
 	margin-top:100px;
+  margin-bottom: -30px;
 	width: 1000px;
 	height: 500px;
 }
 .txt_fin{
-	letter-spacing: 1.5vw;
+	letter-spacing: 1.0vw;
     font-family: 'system-ui';
     text-transform: uppercase;
     text-align: center;
