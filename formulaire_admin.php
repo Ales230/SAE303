@@ -98,7 +98,8 @@ $resultDemandes = $db->query($sqlDemandes);
         <th>ID Adhérent</th>
         <th>Date de début</th>
         <th>Date de fin</th>
-        <th>Nom de l'Avion</th> <!-- Modification de l'en-tête pour afficher le nom -->
+        <th>Nom de l'Avion</th>
+        <th>Actions</th> <!-- Ajout de la colonne pour les actions -->
     </tr>
     <?php
     if ($resultDemandes->num_rows > 0) {
@@ -108,7 +109,7 @@ $resultDemandes = $db->query($sqlDemandes);
             echo "<td>" . $rowDemande['id_adherent'] . "</td>";
             echo "<td>" . $rowDemande['debut'] . "</td>";
             echo "<td>" . $rowDemande['fin'] . "</td>";
-
+            
             // Récupérer le nom de l'avion correspondant à l'ID
             $avionId = $rowDemande['id_avion'];
             $sqlNomAvion = "SELECT type FROM bdl_avions WHERE id_avion = $avionId";
@@ -116,19 +117,23 @@ $resultDemandes = $db->query($sqlDemandes);
             
             if ($resultNomAvion && $resultNomAvion->num_rows > 0) {
                 $rowNomAvion = $resultNomAvion->fetch_assoc();
-                echo "<td>" . $rowNomAvion['type'] . "</td>"; // Afficher le nom de l'avion
+                echo "<td>" . $rowNomAvion['type'] . "</td>";
             } else {
-                echo "<td>Avion inconnu</td>"; // Afficher un message si l'avion est introuvable
+                echo "<td>Avion inconnu</td>";
             }
+            
+            // Ajout du bouton de suppression pour chaque demande
+            echo "<td><form method='post' action='supprimer_demande.php'>
+                  <input type='hidden' name='id_demande' value='{$rowDemande['id_demande']}'>
+                  <input type='submit' value='Demande traitée'></form></td>";
             
             echo "</tr>";
         }
     } else {
-        echo "<tr><td colspan='5'>Aucune demande trouvée.</td></tr>";
+        echo "<tr><td colspan='6'>Aucune demande trouvée.</td></tr>";
     }
     ?>
 </table>
-
 <h2>Nouvelle Réservation</h2>
 <form method="post" action="">
     <!-- Sélectionnez l'adhérent -->

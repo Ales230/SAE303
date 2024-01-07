@@ -16,6 +16,7 @@ class Database {
             echo "Erreur : " . $e->getMessage();
         }
     }
+    
     public function insertAdherent(Adherent $adherent) {
         try {
             $stmt = $this->conn->prepare("INSERT INTO bdl_adherent (id_adherent, civilite, nom, prenom, date_naissance, adresse, email, telephone, activites_demandees, role) 
