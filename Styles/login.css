@@ -2,10 +2,6 @@
     padding: 0px;
     margin: 0px;
 }
-body {
-    background: url(Ressources/fond_log1.jpg) no-repeat;
-    background-size:cover;
-}
 header {
     background-color:#222;
     color: white;

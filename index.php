@@ -869,7 +869,33 @@ echo $form->getForm(); // Affiche le formulaire
   <div class="row" style="text-align:center;">
     <!-- Contenu de la page... -->
   </div>
-
+  <div class="container">
+  <section style="height:80px;"></section>
+  <div class="row" style="text-align:center;">
+    <!-- Contenu de la page... -->
+  </div>
+  <div class="containerbird">
+  
+  
+  
+  <div class="bird-container bird-container--one">
+    <div class="bird bird--one"></div>
+  </div>
+  
+  <div class="bird-container bird-container--two">
+    <div class="bird bird--two"></div>
+  </div>
+  
+  <div class="bird-container bird-container--three">
+    <div class="bird bird--three"></div>
+  </div>
+  <img src="Ressources/anim_avion3.gif" class="disp_interactif" alt="Avion">
+  <div class="bird-container bird-container--four">
+    <div class="bird bird--four"></div>
+    
+  </div>
+  
+</div>
   <!-- Footer -->
   <footer id="footer" class="footer-bs">
     <div class="row">
