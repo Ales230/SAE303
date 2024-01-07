@@ -1,12 +1,5 @@
 <?php
-session_start(); // Démarrer la session
-if (isset($_SESSION["id_adherent"])) {
-    $id_adherent = $_SESSION["id_adherent"];
-} else {
-    // Rediriger l'utilisateur vers la page d'authentification si l'ID adhérent n'est pas défini
-    header("Location: login.php");
-    exit();
-}
+session_start(); 
 $_SESSION["id_adherent"] = $id_adherent; // Stockez l'ID de l'adhérent dans la session
 $servername = "localhost";
 $username = "root";

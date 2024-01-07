@@ -1,11 +1,6 @@
 <?php
-session_start(); // Démarrez la session au début du script
-// Vérifier si la session existe et si l'utilisateur a le rôle admin
-if (!(isset($_SESSION['role']) && $_SESSION['role'] === 'admin')) {
-    // Rediriger vers une page d'erreur ou une page non autorisée
-    header('Location: login.php');
-    exit();
-}
+session_start();
+
 require_once('database.php');
 require_once('adherent.php');
 require_once('pilote.php');
@@ -80,6 +75,26 @@ $resultDemandes = $db->query($sqlDemandes);
 
 
 
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/formulaire_admin.css">
+    <title>Tableau de synthèse</title>
+</head>
+<body>
+<header>
+        <h1>Formulaire administrateur</h1>
+</header>
+<main>
+<div>
 <h2>Liste des demandes</h2>
 <table>
     <tr>
@@ -117,7 +132,8 @@ $resultDemandes = $db->query($sqlDemandes);
     }
     ?>
 </table>
-
+</div>
+<div class="nouv_reserv">
 <h2>Nouvelle Réservation</h2>
 <form method="post" action="">
     <!-- Sélectionnez l'adhérent -->
@@ -167,10 +183,9 @@ $sqlTableauSynthese = "SELECT * FROM bdl_reservations";
 
 $resultTableauSynthese = $db->query($sqlTableauSynthese);
 ?>
+</div>
 
-<html>
-<head>
-    <title>Tableau de synthèse</title>
+    
     <style>
         table {
             border-collapse: collapse;
@@ -187,9 +202,9 @@ $resultTableauSynthese = $db->query($sqlTableauSynthese);
             background-color: #f2f2f2;
         }
     </style>
-</head>
-<body>
 
+
+<div class="tab_synthese">
 <h2>Tableau de synthèse des réservations</h2>
 <table>
     <tr>
@@ -217,6 +232,7 @@ $resultTableauSynthese = $db->query($sqlTableauSynthese);
     }
     ?>
 </table>
-
+</div>
+</main>
 </body>
 </html>
