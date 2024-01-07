@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="Styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <title>AC2FL</title>
+    <title>AC2FL - Aéroclub de Frotey-Les-Lure</title>
     <title>Formulaire d'adhésion</title>
 </head>
 <body>
@@ -51,26 +51,24 @@
           <a class="nav-link" href="#evenement">Évènements</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#avis">Avis</a>
+          <a class="nav-link" href="#tarifs">Tarifs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#galerie">Galerie</a>
+          <a class="nav-link" href="#localisation">Localisation</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#footer">Contact</a>
         </li>
 
-        <li class="nav-item">
-        <button type="button" class="btn btn-dark" id="toggleBtn">
-                            <!-- Utilisation du texte unicode pour les icônes -->
-                            🌙 Mode Sombre
-                        </button>
-                    </li>
+        
       </ul>
 
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+      <button type="button" class="btn btn-dark" id="toggleBtn">
+                            <!-- Utilisation du texte unicode pour les icônes -->
+                            🌙 Mode Sombre
+                        </button>
+      <iframe id="widget_autocomplete_preview"  width="300" height="50" frameborder="0" src="https://meteofrance.com/widget/prevision/702600##081178"> </iframe>
       </form>
     </div>
   </div>
@@ -116,7 +114,7 @@
       <div class="container my-5 mx-auto">
     <div class="row text-center">
         <div class="col-md-6">
-            <h2 id="acti">Nos activités</h2>
+            <h2 class="titres" id="acti">Nos activités</h2>
             <p>
                 L'aéro-club est une association loi 1901, agréée Jeunesse et Sports, adhérente à la FFULM (Fédération Française d'ULM). Elle est enregistrée sous le numéro 04674 et agréée sous le numéro AS70986858. Son siège social est situé au 62, avenue de la République, 70200 Lure.
             </p><br>
@@ -136,42 +134,46 @@
 </div>
 
       
-      <h1 id="catégorie"> Les catégories d'ULM</h1>
+      <h1 class="titres" id="catégorie"> Les catégories d'ULM</h1>
       <hr>
 
       <div  class="container" data-bs-theme="dark" >
-        <div class="row justify-content-center mt-4">
+      <div class="row justify-content-center mt-6">
             <!-- First Card -->
-            <div class="col-md-3 mb-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="Ressources/paramoteur.jpg" class="card-img-top" alt="image paramoteur">
+            <div class="col-md-3 mb-6">
+                <div class="card" style="width: 18rem; height: 32.9rem;">
+                    <img src="Ressources/autogire.jpg" class="card-img-top" alt="image autogire">
                     <div class="card-body">
-                        <h5 class="card-title">Le paramoteur</h5>
-                        <p class="card-text">Un ULM paramoteur est un aéronef sustenté par une voilure souple, de type parachute.</p>
-                        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight1">En savoir plus</button>
+                        <h5 class="card-title">L’autogire ultraléger</h5>
+                        <span class="badge rounded-pill text-bg-success">Disponible</span> <br>
+
+                        <p class="card-text">Appareil volant dont le rotor assure la sustentation (et non la propulsion, comme dans l'hélicoptère).</p>
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight4" aria-controls="offcanvasRight4">En savoir plus</button>
     
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel1">
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight4" aria-labelledby="offcanvasRightLabel4">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasRightLabel1">Le paramoteur</h5>
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel4">L’autogire ultraléger</h5>
                                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body small">
-                                Un ULM paramoteur est un aéronef sus-
-                                tenté par une voilure souple, de type
-                                parachute. Il répond aux conditions techniques suivantes :
-                                La puissance maximale continue est
-                                inférieure ou égale à 81 cv. pour les
-                                monoplaces et 102 cv. pour les
-                                biplaces. La vitesse minimum de vol
-                                est inférieure ou égale à 65 km/h.
-                                La masse maximale est inférieure ou
-                                égale à 300 kg pour les monoplaces et
-                                à 450 kg pour les biplaces.
+                                Un autogire ultra-léger répond aux
+                                conditions techniques suivantes :
+                                k La puissance maximale continue est inférieure ou
+                                égale à 102 cv. pour les monoplaces et 122 cv. pour
+                                les biplaces. La vitesse minimum de vol est inférieure
+                                ou égale à 65 km/h.
+                                k La masse maximale est inférieure ou égale à 300 kg
+                                pour les monoplaces et à 450 kg pour les biplaces.
+                                k La charge rotorique à la masse
+                                maximale est comprise entre
+                                4,5 et 12kg/m2
+                                .
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        
     
             <!-- Second Card -->
             <div class="col-md-3 mb-4">
@@ -179,6 +181,8 @@
                     <img src="Ressources/pendulaire.jpg" class="card-img-top" alt="image pendulaire">
                     <div class="card-body">
                         <h5 class="card-title">Le pendulaire</h5>
+                        <span class="badge rounded-pill text-bg-success">Disponible</span> <br>
+
                         <p class="card-text">Un ULM pendulaire est un aéronef sustenté par une voilure rigide sous laquelle est généralement accrochée un chariot motorisé.</p>
                         <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight2">En savoir plus</button>
     
@@ -213,12 +217,14 @@
     
             <!-- Third Card -->
             <div class="col-md-3 mb-4">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem; height: 32.9rem;">
                     <img src="Ressources/multiaxes.jpg" class="card-img-top" alt="image multiaxes">
                     <div class="card-body">
                         <h5 class="card-title">Le multiaxes</h5>
+                        <span class="badge rounded-pill text-bg-success">Disponible</span> <br>
+
                         <p class="card-text">Un ULM multiaxes est un aéronef sustenté par
-                            une voilure fixe.</p>
+                            une voilure fixe.</p><br><br>
                         <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight3" aria-controls="offcanvasRight3">En savoir plus</button>
     
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight3" aria-labelledby="offcanvasRightLabel3">
@@ -253,31 +259,33 @@
         <div class="row justify-content-center mt-4">
             <!-- Fourth Card -->
             <div class="col-md-3 mb-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="Ressources/autogire.jpg" class="card-img-top" alt="image autogire">
+                <div class="card" style="width: 18rem;  height: 38.8rem;">
+                    <img src="Ressources/paramoteur.jpg" class="card-img-top" alt="image paramoteur">
                     <div class="card-body">
-                        <h5 class="card-title">L’autogire ultraléger</h5>
-                        <p class="card-text">Appareil volant dont le rotor assure la sustentation (et non la propulsion, comme dans l'hélicoptère).</p>
-                        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight4" aria-controls="offcanvasRight4">En savoir plus</button>
+                        <h5 class="card-title">Le paramoteur</h5>
+                        <span class="badge rounded-pill text-bg-danger">Non disponible</span>
+
+                        
+                        <p class="card-text">Un ULM paramoteur est un aéronef sustenté par une voilure souple, de type parachute.</p><br><br><br><br><br>
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight1">En savoir plus</button>
     
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight4" aria-labelledby="offcanvasRightLabel4">
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel1">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasRightLabel4">L’autogire ultraléger</h5>
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel1">Le paramoteur</h5>
                                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body small">
-                                Un autogire ultra-léger répond aux
-                                conditions techniques suivantes :
-                                k La puissance maximale continue est inférieure ou
-                                égale à 102 cv. pour les monoplaces et 122 cv. pour
-                                les biplaces. La vitesse minimum de vol est inférieure
-                                ou égale à 65 km/h.
-                                k La masse maximale est inférieure ou égale à 300 kg
-                                pour les monoplaces et à 450 kg pour les biplaces.
-                                k La charge rotorique à la masse
-                                maximale est comprise entre
-                                4,5 et 12kg/m2
-                                .
+                                Un ULM paramoteur est un aéronef sus-
+                                tenté par une voilure souple, de type
+                                parachute. Il répond aux conditions techniques suivantes :
+                                La puissance maximale continue est
+                                inférieure ou égale à 81 cv. pour les
+                                monoplaces et 102 cv. pour les
+                                biplaces. La vitesse minimum de vol
+                                est inférieure ou égale à 65 km/h.
+                                La masse maximale est inférieure ou
+                                égale à 300 kg pour les monoplaces et
+                                à 450 kg pour les biplaces.
                             </div>
                         </div>
                     </div>
@@ -290,6 +298,7 @@
                     <img src="Ressources/aerostat.jpg" class="card-img-top" alt="image aérostat">
                     <div class="card-body">
                         <h5 class="card-title">L’aérostat ultraléger</h5>
+                        <span class="badge rounded-pill text-bg-danger">Non disponible</span>
                         <p class="card-text">Véhicule aérien sans moteur plus léger que l'air. Les aérostats ultra-légers sont caractérisés par leur poids extrêmement faible et leur capacité à rester en suspension dans l'air en exploitant la différence de densité entre l'hélium ou l'hydrogène.</p>
                         <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight5" aria-controls="offcanvasRight5">En savoir plus</button>
     
@@ -315,11 +324,12 @@
     
             <!-- Sixth Card -->
             <div class="col-md-3 mb-4">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem; height: 38.8rem;">
                     <img src="Ressources/helico.jpg" class="card-img-top" alt="image hélico ultraléger">
                     <div class="card-body">
                         <h5 class="card-title">L’hélicoptère ultraléger</h5>
-                        <p class="card-text">L'hélicoptère ultra léger est un hélico monomoteur dont la puissance maximale est inférieure ou égale à 116 CV (monoplace) ou à 143 CV (biplaces).</p>
+                        <span class="badge rounded-pill text-bg-danger">Non disponible</span>
+                        <p class="card-text">L'hélicoptère ultra léger est un hélico monomoteur dont la puissance maximale est inférieure ou égale à 116 CV (monoplace) ou à 143 CV (biplaces).</p><br><br><br>
                         <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight6" aria-controls="offcanvasRight6">En savoir plus</button>
     
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight6" aria-labelledby="offcanvasRightLabel6">
@@ -350,7 +360,7 @@
 
     <main>
       <section>
-        <h1 id ="moyens">Nos moyens pédagogiques</h1>
+        <h1 class="titres" id ="moyens">Nos moyens pédagogiques</h1>
         <h3>Un aérodrome privé avec la possibilité d'un hébergement dans un environnement exceptionnel</h3>
         <hr>
        
@@ -538,7 +548,7 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
     
       
       
-        <h1 id="equipe">Notre Équipe</h1>
+        <h1 class="titres" id="equipe">Notre Équipe</h1>
         <hr>
         <div class="container">
 
@@ -621,37 +631,216 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
               </div>
             </div>
           
-          </div>
+          </div> <br> <br>
          
-          <h1 id="evenement">Évènements à venir</h1>
+          <h1 class="titres" id="evenement">Évènements à venir</h1>
           <hr>
 
-          <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <div  class="container" data-bs-theme="dark" >
+      <div class="row justify-content-center mt-8">
+            <!-- First Card -->
+            <div class="col-md-4 mb-6">
+                <div class="card" style="width: 22rem; height: 38rem;">
+                <a  href="https://mondialulm.fr/fr/">  <img src="Ressources/event1.png" class="card-img-top" alt="image evenement"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Mondial de l'ULM 2023 à Blois</h5>
+                      <br>
+
+                        <p class="card-text"> Le Salon mondial de l'ULM 2023 a marqué un moment mémorable, rassemblant l'élite de l'aviation légère pour présenter les dernières innovations, technologies et tendances, offrant ainsi une vision passionnante de l'avenir de l'aviation légère à l'échelle mondiale.</p>
+                        <a  href="https://mondialulm.fr/fr/"> <button class="btn btn-secondary" type="button" >En savoir plus</button></a>
+    
+                       
+                    </div>
+                </div>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="événement 1" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="événement 2" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="événement 3" class="d-block w-100" alt="...">
-              </div>
+        
+    
+            <!-- Second Card -->
+            <div class="col-md-4 mb-6">
+                <div class="card" style="width: 22rem; height: 38rem;">
+                <a  href="https://www.vosgesmatin.fr/vosges/2013/07/28/envolee-d-ulm-a-remomeix"> <img src="Ressources/event2.jpg" class="card-img-top" alt="évènement ulm à Remomeix" /> </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Envolée d’ULM à Remomeix </h5>
+                        <br>
+
+                        <p class="card-text">Rassemblant environ 300 participants, le « Tour ULM » a pris son départ hier matin à l’aérodrome. À l’issue de plusieurs escales en Allemagne, les pilotes seront de retour vendredi.</p><br><br>
+                        <a  href="https://www.vosgesmatin.fr/vosges/2013/07/28/envolee-d-ulm-a-remomeix">  <button class="btn btn-secondary" type="button" >En savoir plus</button></a>
+    
+                        
+                    </div>
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+    
+            <!-- Third Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 22rem; height: 38rem;">
+                <a href="https://www.lejsl.com/edition-macon/2018/07/21/le-tour-ulm-est-parti-de-macon-ce-samedi-matin" > <img src="Ressources/event3.jpg" class="card-img-top" alt="tour ulm mâcon" /> </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Le Tour ULM est parti de Mâcon ce samedi matin</h5>
+                     
+                        Près de 140 ULM - multiaxes, pendulaires et autogyres - participant au 23e  Tour ULM, organisé par la FFPLUM sont partis de l’aérodome de Mâcon, samedi matin. Après une semaine d’épreuves qui les mèneront en Belgique et sur les côtes normandes.</p><br>
+                        <a href="https://www.lejsl.com/edition-macon/2018/07/21/le-tour-ulm-est-parti-de-macon-ce-samedi-matin" >   <button class="btn btn-secondary" type="button" >En savoir plus</button></a>
+    
+                      
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+                    </div>
+
+         <!-- Prix Starts -->
+	<section class="pricing" id="pricing">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+        <h1 class="titres" id="tarifs">Tarifs <span>abordables</h1>
+        <br>
+		<p>Découvrez la passion du vol à des prix accessibles !</p>
+    <hr>
+					
+			
+			
+			<section class="container">
+				<div class="row">
+				  <div class="col-md-12">
+					<div class="carousel slide" data-ride="carousel" id="carousel-formation">
+					  
+			  
+					  <div class="carousel-inner">
+						<div class="carousel-item active">
+						  <div class="card" style="width: 30rem; height: 18rem; margin: 0 auto;">
+							<h5 class="card-header bg-dark text-white">Stage d'initiation 180€</h5>
+							<div class="card-body">
+							  <h6 class="card-title text-center"></h6>
+							  <ul class="list-unstyled">
+								<li>Durée 3h</li>
+								<li>Présentation de l'aéronef et notion de mécanique du vol</li>
+								<li>Formation à pied ou en chariot</li>
+								<li>Gonflage et pilotage d'un parapente au sol</li>
+								<li>Comprend un vol de 20 mn en biplace</li>
+							  </ul>
+							  <button class="btn btn-secondary" type="button">Réserver</button>
+
+							</div>
+						  </div>
+						</div>
+						<div class="carousel-item">
+						  <div class="card" style="width: 30rem; height: 18rem; margin: 0 auto;">
+							<h5 class="card-header bg-dark text-white">Brevet de pilote 1200€</h5>
+							<div class="card-body">
+							  <h6 class="card-title text-center"></h6>
+							  <ul class="list-unstyled">
+								<li>Validité 1 an</li>
+								<li>Cours illimités</li>
+								<li>Formation à pied ou en chariot</li>
+								<li>Prêt du matériel</li>
+								<li>10 vols minimum</li>							
+								<li>Un cours de perfectionnement offert</li>
+							  </ul>
+							  <button class="btn btn-secondary" type="button">Réserver</button>
+
+							</div>
+						  </div>
+						</div>
+						<div class="carousel-item">
+						  <div class="card" style="width: 30rem; height: 18rem; margin: 0 auto;">
+							<h5 class="card-header bg-dark text-white">Emport de passager 450€</h5>
+							<div class="card-body">
+							  <h6 class="card-title text-center"></h6>
+							  <ul class="list-unstyled">
+								<li>Durée de 6 à 8h</li>
+								<li>Évaluation préalable du pilote</li>
+								<li>Formation à pied ou en chariot</li>
+								<li>Avec le matériel du stagiaire</li>
+								<li>4 vols minimum</li>
+								<li>Sensibilisation aux facteurs humains</li>
+							  </ul>
+							  <button class="btn btn-secondary" type="button">Réserver</button>
+
+							</div>
+						  </div>
+						</div>
+						<div class="carousel-item">
+							<div class="card" style="width: 30rem; height: 18rem; margin: 0 auto;">
+							  <h5 class="card-header bg-dark text-white">Vol découverte 60€</h5>
+							  <div class="card-body">
+								<h6 class="card-title text-center"></h6>
+								<ul class="list-unstyled">
+								  <li>Vol découverte de 30 minutes</li>
+								  <li>Balade Château de Chantilly</li>
+								  <li>Essence comprise</li>
+								  <li>Rendez-vous au 06.30.23.41.43</li>
+								  <li>Possibilité de promenade à la carte</li>
+								  
+								</ul>
+								<button class="btn btn-secondary" type="button">Réserver</button>
+
+							  </div>
+							</div>
+						  </div>
+						  <div class="carousel-item">
+							<div class="card" style="width: 30rem; height: 18rem; margin: 0 auto;">
+							  <h5 class="card-header bg-dark text-white">Membre 90€/heure</h5>
+							  <div class="card-body">
+								<h6 class="card-title text-center"></h6>
+								<ul class="list-unstyled">
+								  <li>Prix pour les 10 premières heures</li>
+								  <li>Cotisation club: 105€</li>
+								  <li>Cotisation moins de 25 ans à 60€</li>
+								  <li>Assurance comprise</li>
+								  <li>Avoir licence FFPLUM ou FFV</li>
+								  
+								</ul>
+								<button class="btn btn-secondary" type="button">Réserver</button>
+
+							  </div>
+							</div>
+						  </div>
+
+						  <div class="carousel-item">
+							<div class="card" style="width: 30rem; height: 18rem; margin: 0 auto;">
+							  <h5 class="card-header bg-dark text-white">Membre +40 heures</h5>
+							  <div class="card-body">
+								<h6 class="card-title text-center"></h6>
+								<ul class="list-unstyled">
+								  <li>+10h = 75€/h</li>
+								  <li>+20h = 71€/h</li>
+								  <li>+30h = 67€/h</li>
+								  <li>-25 ans = -20%</li>
+								  <li>Avoir licence FFPLUM ou FFV</li>
+								  
+								</ul>
+								<button class="btn btn-secondary" type="button">Réserver</button>
+
+							  </div>
+							</div>
+						  </div>
+
+					  </div>
+			  
+					  <a class="carousel-control carousel-control-prev bg-secondary "style="width:" href="#carousel-formation" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only"></span>
+					  </a>
+					  <a class="carousel-control carousel-control-next bg-secondary" href="#carousel-formation" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only"></span>
+					  </a>
+					</div>
+	
+	<!-- Map -->
+  <h1 class="titres" id="localisation">Localisez Nous</h1>
+        <br>
+		<p>Notre association se situe à proximité de Frotey-Les-Lures</p>
+    <hr>
+	</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.500055775827!2d6.545493728266803!3d47.655289912740024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479243ff7a705239%3A0x4d2f79be7103e0b6!2sA%C3%A9ro-club%20de%20Flotey-Les-Lures!5e0!3m2!1sfr!2sfr!4v1704562011553!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				
+		</div>
+	</section>
+	<!--Map Ends -->
+
 <?php
 require_once("form.php");
 require_once("formvalidator.php");
@@ -682,7 +871,7 @@ echo $form->getForm(); // Affiche le formulaire
   </div>
 
   <!-- Footer -->
-  <footer class="footer-bs">
+  <footer id="footer" class="footer-bs">
     <div class="row">
       <div class="col-md-3 footer-brand animated fadeInLeft">
         <img id="logofooter" src="Ressources/AC2FL.png" alt="logo"> <br>
@@ -744,7 +933,7 @@ echo $form->getForm(); // Affiche le formulaire
         </div>
         <div class="modal-body">
           <!-- Contenu du modal À propos... -->
-          <p>’Aéro-Club de Frotey-les-Lure appelé sous le terme ACF2L Il a pour origine la fusion de l’Aéro-Club de l’Ill siégeant à Vesoul et de l’Aéro-Club Marin-La-Meslée, siégeant à Frotey-les-Lure. au sein de l’Association des Aéro-Clubs de la Bourgogne-Franche-Comté.
+          <p>L’Aéro-Club de Frotey-les-Lure appelé sous le terme ACF2L Il a pour origine la fusion de l’Aéro-Club de l’Ill siégeant à Vesoul et de l’Aéro-Club Marin-La-Meslée, siégeant à Frotey-les-Lure. au sein de l’Association des Aéro-Clubs de la Bourgogne-Franche-Comté.
 L’aéro-club est une Association Loi 1901, agréée Jeunesse et Sports , adhérente à la FFULM ( Fédération Française d’ULM) . </p>
         </div>
         <div class="modal-footer">
@@ -755,7 +944,7 @@ L’aéro-club est une Association Loi 1901, agréée Jeunesse et Sports , adhé
   </div>
 
   <!-- Modal Politique de confidentialité -->
-  <div class="modal fade" id="confidentialiteModal" tabindex="-1" role="dialog" aria-labelledby="confidentialiteModalLabel" aria-hidden="true">
+  <div class="modal fade" id="confidentialiteModal" tabindex="-1" role="dialog" aria-labelledby="confidentialiteModalLabel" aria-hidden="true" >
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -776,7 +965,7 @@ L’aéro-club est une Association Loi 1901, agréée Jeunesse et Sports , adhé
   </div>
 
 </div>
-          
+<script src="https://cdn.websitepolicies.io/lib/cconsent/cconsent.min.js" defer></script><script>window.addEventListener("load",function(){window.wpcb.init({"border":"thin","corners":"small","colors":{"popup":{"background":"#222222","text":"#ffffff","border":"#b3d0e4"},"button":{"background":"#b3d0e4","text":"#000000"}},"content":{"message":"Le site web de l'Association AC2FL utilise des cookies pour améliorer votre expérience. En continuant à naviguer sur notre site, vous acceptez notre utilisation des cookies conformément à notre politique de cookies","link":"En savoir plus","button":"J'accepte"}})});</script>      
         
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
