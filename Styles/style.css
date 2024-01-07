@@ -36,6 +36,11 @@ body.dark-mode {
 	}
   }
 
+.titres{
+
+margin-top: 100px;
+}
+
 .modal-body{
 	color: #000000;
 }

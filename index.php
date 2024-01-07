@@ -51,7 +51,7 @@
           <a class="nav-link" href="#evenement">Évènements</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#avis">Avis</a>
+          <a class="nav-link" href="#tarifs">Tarifs</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#localisation">Localisation</a>
@@ -117,7 +117,7 @@
       <div class="container my-5 mx-auto">
     <div class="row text-center">
         <div class="col-md-6">
-            <h2 id="acti">Nos activités</h2>
+            <h2 class="titres" id="acti">Nos activités</h2>
             <p>
                 L'aéro-club est une association loi 1901, agréée Jeunesse et Sports, adhérente à la FFULM (Fédération Française d'ULM). Elle est enregistrée sous le numéro 04674 et agréée sous le numéro AS70986858. Son siège social est situé au 62, avenue de la République, 70200 Lure.
             </p><br>
@@ -137,7 +137,7 @@
 </div>
 
       
-      <h1 id="catégorie"> Les catégories d'ULM</h1>
+      <h1 class="titres" id="catégorie"> Les catégories d'ULM</h1>
       <hr>
 
       <div  class="container" data-bs-theme="dark" >
@@ -363,7 +363,7 @@
 
     <main>
       <section>
-        <h1 id ="moyens">Nos moyens pédagogiques</h1>
+        <h1 class="titres" id ="moyens">Nos moyens pédagogiques</h1>
         <h3>Un aérodrome privé avec la possibilité d'un hébergement dans un environnement exceptionnel</h3>
         <hr>
        
@@ -551,7 +551,7 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
     
       
       
-        <h1 id="equipe">Notre Équipe</h1>
+        <h1 class="titres" id="equipe">Notre Équipe</h1>
         <hr>
         <div class="container">
 
@@ -636,7 +636,7 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
           
           </div> <br> <br>
          
-          <h1 id="evenement">Évènements à venir</h1>
+          <h1 class="titres" id="evenement">Évènements à venir</h1>
           <hr>
 
           <div  class="container" data-bs-theme="dark" >
@@ -692,10 +692,148 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
         </div>
                     </div>
 
-         
+         <!-- Prix Starts -->
+	<section class="pricing" id="pricing">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+        <h1 class="titres" id="tarifs">Tarifs <span>abordables</h1>
+        <br>
+		<p>Découvrez la passion du vol à des prix accessibles !</p>
+    <hr>
+					
+			
+			
+			<section class="container">
+				<div class="row">
+				  <div class="col-md-12">
+					<div class="carousel slide" data-ride="carousel" id="carousel-formation">
+					  
+			  
+					  <div class="carousel-inner">
+						<div class="carousel-item active">
+						  <div class="card" style="width: 30rem; height: 18rem; margin: 0 auto;">
+							<h5 class="card-header bg-dark text-white">Stage d'initiation 180€</h5>
+							<div class="card-body">
+							  <h6 class="card-title text-center"></h6>
+							  <ul class="list-unstyled">
+								<li>Durée 3h</li>
+								<li>Présentation de l'aéronef et notion de mécanique du vol</li>
+								<li>Formation à pied ou en chariot</li>
+								<li>Gonflage et pilotage d'un parapente au sol</li>
+								<li>Comprend un vol de 20 mn en biplace</li>
+							  </ul>
+							  <button class="btn btn-dark" type="button">Réserver</button>
+
+							</div>
+						  </div>
+						</div>
+						<div class="carousel-item">
+						  <div class="card" style="width: 30rem; height: 18rem; margin: 0 auto;">
+							<h5 class="card-header bg-dark text-white">Brevet de pilote 1200€</h5>
+							<div class="card-body">
+							  <h6 class="card-title text-center"></h6>
+							  <ul class="list-unstyled">
+								<li>Validité 1 an</li>
+								<li>Cours illimités</li>
+								<li>Formation à pied ou en chariot</li>
+								<li>Prêt du matériel</li>
+								<li>10 vols minimum</li>							
+								<li>Un cours de perfectionnement offert</li>
+							  </ul>
+							  <button class="btn btn-dark" type="button">Réserver</button>
+
+							</div>
+						  </div>
+						</div>
+						<div class="carousel-item">
+						  <div class="card" style="width: 30rem; height: 18rem; margin: 0 auto;">
+							<h5 class="card-header bg-dark text-white">Emport de passager 450€</h5>
+							<div class="card-body">
+							  <h6 class="card-title text-center"></h6>
+							  <ul class="list-unstyled">
+								<li>Durée de 6 à 8h</li>
+								<li>Évaluation préalable du pilote</li>
+								<li>Formation à pied ou en chariot</li>
+								<li>Avec le matériel du stagiaire</li>
+								<li>4 vols minimum</li>
+								<li>Sensibilisation aux facteurs humains</li>
+							  </ul>
+							  <button class="btn btn-dark" type="button">Réserver</button>
+
+							</div>
+						  </div>
+						</div>
+						<div class="carousel-item">
+							<div class="card" style="width: 30rem; height: 18rem; margin: 0 auto;">
+							  <h5 class="card-header bg-dark text-white">Vol découverte 60€</h5>
+							  <div class="card-body">
+								<h6 class="card-title text-center"></h6>
+								<ul class="list-unstyled">
+								  <li>Vol découverte de 30 minutes</li>
+								  <li>Balade Château de Chantilly</li>
+								  <li>Essence comprise</li>
+								  <li>Rendez-vous au 06.30.23.41.43</li>
+								  <li>Possibilité de promenade à la carte</li>
+								  
+								</ul>
+								<button class="btn btn-dark" type="button">Réserver</button>
+
+							  </div>
+							</div>
+						  </div>
+						  <div class="carousel-item">
+							<div class="card" style="width: 30rem; height: 18rem; margin: 0 auto;">
+							  <h5 class="card-header bg-dark text-white">Membre 90€/heure</h5>
+							  <div class="card-body">
+								<h6 class="card-title text-center"></h6>
+								<ul class="list-unstyled">
+								  <li>Prix pour les 10 premières heures</li>
+								  <li>Cotisation club: 105€</li>
+								  <li>Cotisation moins de 25 ans à 60€</li>
+								  <li>Assurance comprise</li>
+								  <li>Avoir licence FFPLUM ou FFV</li>
+								  
+								</ul>
+								<button class="btn btn-dark" type="button">Réserver</button>
+
+							  </div>
+							</div>
+						  </div>
+
+						  <div class="carousel-item">
+							<div class="card" style="width: 30rem; height: 18rem; margin: 0 auto;">
+							  <h5 class="card-header bg-dark text-white">Membre +40 heures</h5>
+							  <div class="card-body">
+								<h6 class="card-title text-center"></h6>
+								<ul class="list-unstyled">
+								  <li>+10h = 75€/h</li>
+								  <li>+20h = 71€/h</li>
+								  <li>+30h = 67€/h</li>
+								  <li>-25 ans = -20%</li>
+								  <li>Avoir licence FFPLUM ou FFV</li>
+								  
+								</ul>
+								<button class="btn btn-dark" type="button">Réserver</button>
+
+							  </div>
+							</div>
+						  </div>
+
+					  </div>
+			  
+					  <a class="carousel-control carousel-control-prev bg-dark "style="width:" href="#carousel-formation" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only"></span>
+					  </a>
+					  <a class="carousel-control carousel-control-next bg-dark" href="#carousel-formation" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only"></span>
+					  </a>
+					</div>
 	
 	<!-- Map -->
-  <h1 id="localisation">Localisez Nous</h1>
+  <h1 class="titres" id="localisation">Localisez Nous</h1>
         <br>
 		<p>Notre association se situe à proximité de Frotey-Les-Lures</p>
     <hr>
@@ -736,7 +874,7 @@ echo $form->getForm(); // Affiche le formulaire
   </div>
 
   <!-- Footer -->
-  <footer class="footer-bs">
+  <footer id="footer" class="footer-bs">
     <div class="row">
       <div class="col-md-3 footer-brand animated fadeInLeft">
         <img id="logofooter" src="Ressources/AC2FL.png" alt="logo"> <br>
