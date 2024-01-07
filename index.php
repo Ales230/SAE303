@@ -60,15 +60,14 @@
           <a class="nav-link" href="#footer">Contact</a>
         </li>
 
-        <li class="nav-item">
-        <button type="button" class="btn btn-dark" id="toggleBtn">
-                            <!-- Utilisation du texte unicode pour les icônes -->
-                            🌙 Mode Sombre
-                        </button>
-                  
+        
       </ul>
 
       <form class="d-flex">
+      <button type="button" class="btn btn-dark" id="toggleBtn">
+                            <!-- Utilisation du texte unicode pour les icônes -->
+                            🌙 Mode Sombre
+                        </button>
       <iframe id="widget_autocomplete_preview"  width="300" height="50" frameborder="0" src="https://meteofrance.com/widget/prevision/702600##081178"> </iframe>
       </form>
     </div>
