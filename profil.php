@@ -137,14 +137,13 @@ $reservations_adherent = $stmt_reservations->fetchAll(PDO::FETCH_ASSOC);
         </tr>
     </thead>
     <tbody>
-        <?php if (count($demandes_en_cours) > 0) : ?>
+        <?php if (isset($demandes_en_cours) && is_array($demandes_en_cours) && count($demandes_en_cours) > 0) : ?>
             <?php foreach ($demandes_en_cours as $demande) : ?>
                 <tr>
                     <td><?php echo $demande['id_demande']; ?></td>
                     <td><?php echo $demande['debut']; ?></td>
                     <td><?php echo $demande['fin']; ?></td>
                     <td><?php echo $demande['type']; ?></td>
-
                     <!-- Afficher d'autres colonnes selon vos besoins -->
                 </tr>
             <?php endforeach; ?>
@@ -163,7 +162,6 @@ $reservations_adherent = $stmt_reservations->fetchAll(PDO::FETCH_ASSOC);
             <th>Nom du Pilote</th>
             <th>Prénom du Pilote</th>
             <th>Immatriculation du pilote</th>
-
             <th>Type d'Avion</th>
             <th>Date Début</th>
             <th>Date Fin</th>
@@ -171,14 +169,13 @@ $reservations_adherent = $stmt_reservations->fetchAll(PDO::FETCH_ASSOC);
         </tr>
     </thead>
     <tbody>
-        <?php if (count($reservations_adherent) > 0) : ?>
+        <?php if (isset($reservations_adherent) && is_array($reservations_adherent) && count($reservations_adherent) > 0) : ?>
             <?php foreach ($reservations_adherent as $reservation) : ?>
                 <tr>
                     <td><?php echo $reservation['id_reservation']; ?></td>
                     <td><?php echo $reservation['nom_pilote']; ?></td>
                     <td><?php echo $reservation['prenom_pilote']; ?></td>
                     <td><?php echo $reservation['numero_licence']; ?></td>
-
                     <td><?php echo $reservation['type_avion']; ?></td>
                     <td><?php echo $reservation['debut']; ?></td>
                     <td><?php echo $reservation['fin']; ?></td>
@@ -192,6 +189,7 @@ $reservations_adherent = $stmt_reservations->fetchAll(PDO::FETCH_ASSOC);
         <?php endif; ?>
     </tbody>
 </table>
+
 
 
 </body>
