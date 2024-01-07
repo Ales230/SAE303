@@ -6,6 +6,7 @@ body {
 body.dark-mode {
 	background-color: #222;
 	color: #fff;
+
 }
 .navbar {
     background-color: rgba(0, 0, 0, 0.87);
@@ -323,4 +324,11 @@ hr {
 	margin-top:100px;
 	width: 1000px;
 	height: 500px;
+}
+.txt_fin{
+	letter-spacing: 1.5vw;
+    font-family: 'system-ui';
+    text-transform: uppercase;
+    text-align: center;
+	margin-bottom:-125px;
 }

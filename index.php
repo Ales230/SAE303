@@ -865,17 +865,21 @@ echo $form->getForm(); // Affiche le formulaire
 
 
 <div class="container">
+  
   <section style="height:80px;"></section>
   <div class="row" style="text-align:center;">
     <!-- Contenu de la page... -->
   </div>
   <div class="container">
+    
   <section style="height:80px;"></section>
   <div class="row" style="text-align:center;">
     <!-- Contenu de la page... -->
   </div>
+  <div>
+  <h1 class="txt_fin"> Vous êtes arrivé à destination !</h1>
+        </div>
   <div class="containerbird">
-  
   
   
   <div class="bird-container bird-container--one">
@@ -888,8 +892,12 @@ echo $form->getForm(); // Affiche le formulaire
   
   <div class="bird-container bird-container--three">
     <div class="bird bird--three"></div>
+    
   </div>
+  
+  <div>
   <img src="Ressources/anim_avion3.gif" class="disp_interactif" alt="Avion">
+        </div>
   <div class="bird-container bird-container--four">
     <div class="bird bird--four"></div>
     
