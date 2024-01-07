@@ -723,7 +723,7 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
 								<li>Gonflage et pilotage d'un parapente au sol</li>
 								<li>Comprend un vol de 20 mn en biplace</li>
 							  </ul>
-							  <button class="btn btn-dark" type="button">Réserver</button>
+							  <button class="btn btn-secondary" type="button">Réserver</button>
 
 							</div>
 						  </div>
@@ -741,7 +741,7 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
 								<li>10 vols minimum</li>							
 								<li>Un cours de perfectionnement offert</li>
 							  </ul>
-							  <button class="btn btn-dark" type="button">Réserver</button>
+							  <button class="btn btn-secondary" type="button">Réserver</button>
 
 							</div>
 						  </div>
@@ -759,7 +759,7 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
 								<li>4 vols minimum</li>
 								<li>Sensibilisation aux facteurs humains</li>
 							  </ul>
-							  <button class="btn btn-dark" type="button">Réserver</button>
+							  <button class="btn btn-secondary" type="button">Réserver</button>
 
 							</div>
 						  </div>
@@ -777,7 +777,7 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
 								  <li>Possibilité de promenade à la carte</li>
 								  
 								</ul>
-								<button class="btn btn-dark" type="button">Réserver</button>
+								<button class="btn btn-secondary" type="button">Réserver</button>
 
 							  </div>
 							</div>
@@ -795,7 +795,7 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
 								  <li>Avoir licence FFPLUM ou FFV</li>
 								  
 								</ul>
-								<button class="btn btn-dark" type="button">Réserver</button>
+								<button class="btn btn-secondary" type="button">Réserver</button>
 
 							  </div>
 							</div>
@@ -814,7 +814,7 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
 								  <li>Avoir licence FFPLUM ou FFV</li>
 								  
 								</ul>
-								<button class="btn btn-dark" type="button">Réserver</button>
+								<button class="btn btn-secondary" type="button">Réserver</button>
 
 							  </div>
 							</div>
@@ -822,11 +822,11 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
 
 					  </div>
 			  
-					  <a class="carousel-control carousel-control-prev bg-dark "style="width:" href="#carousel-formation" role="button" data-slide="prev">
+					  <a class="carousel-control carousel-control-prev bg-secondary "style="width:" href="#carousel-formation" role="button" data-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 						<span class="sr-only"></span>
 					  </a>
-					  <a class="carousel-control carousel-control-next bg-dark" href="#carousel-formation" role="button" data-slide="next">
+					  <a class="carousel-control carousel-control-next bg-secondary" href="#carousel-formation" role="button" data-slide="next">
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
 						<span class="sr-only"></span>
 					  </a>
