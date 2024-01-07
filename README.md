@@ -1,0 +1,90 @@
+# Refonte du Site Web de l'AC2FL
+
+Ce projet vise à moderniser et améliorer le site web de l'Association (AC2FL), un aéroclub d'ULM, en utilisant le framework front-end Bootstrap et en créant une base de donnée pour les membres de l'association.
+
+## Table des matières
+
+- [Aperçu](#aperçu)
+- [Technologies utilisées](#technologies-utilisées)
+- [Installation](#installation)
+- [Structure du Projet](#structure-du-projet)
+- [Auteursr](#auteurs)
+
+
+## Aperçu
+
+![image](https://github.com/Ales230/SAE303/assets/115214794/26fa2848-c65c-4d92-b4ff-e3ac27a0f0e7)
+
+
+## Technologies utilisées
+
+- HTML5
+- CSS3 (Bootstrap)
+- JavaScript
+- PHP Objet
+- SQL
+
+## Installation
+
+Pour contribuer ou tester localement, suivez ces étapes :
+
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/Ales230/SAE303.git
+   cd SAE303
+
+   Bien sûr, voici une version adaptée du README.md pour un projet de refonte du site de l'association AC2FL, en utilisant Bootstrap comme framework front-end. N'oubliez pas de personnaliser les détails en fonction des besoins spécifiques de votre projet.
+
+markdown
+
+
+
+Structure du Projet
+
+
+
+SAE303/
+
+│
+├──bdl-ac2fl.sql
+├──index.php
+├──adherent.php
+├──ajouter_avion.php
+├──ajouter_pilote.php
+├──authentification.php
+├──avion.php
+├──database.php
+├──form.php
+├──formulaire_admin.php
+├──formulaire_membre.php
+├──formvalidator.php
+├──login.php
+├──modifier_avion.php
+├──modifier_pilote.php
+├──pilote.php
+├──profil.php
+├──remerciement.php
+├──reservations_membre.php
+├──supprimer_avion.php
+├──supprimer_demande.php
+├──supprimer_pilote.php
+├──traitement.php
+├──traitement_admin.php
+├──traitement_membre.php
+├── js/
+│ 
+└── bootsrap.js
+├── Styles/
+│   ├── style.css
+│   └── login.css
+│   └──formulaire_admin.css
+└── Ressources/
+    ├── toutes les images en png et jpg
+    ![image](https://github.com/Ales230/SAE303/assets/115214794/9217618a-e4a0-46e8-ae73-c699d8d65e66)
+
+  
+##Auteurs
+
+- Ilyès B @IlyesBo
+- Alan L @Ales230
+- Joris D @JSo77

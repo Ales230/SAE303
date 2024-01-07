@@ -78,38 +78,93 @@
 </nav>
 
 
-
+  
+  <section style="height:80px;"></section>
+  <div class="row" style="text-align:center;">
+    <!-- Contenu de la page... -->
+  </div>
+  
+    
+  <section style="height:80px;"></section>
+  <div class="row" style="text-align:center;">
+    <!-- Contenu de la page... -->
+  </div>
+  <div>
+  <h1 class="txt_fin"> Bienvenue sur la page d'AC2FL !</h1>
+        </div>
+  <div class="containerbird">
+  
+  
+  <div class="bird-container bird-container--one">
+    <div class="bird bird--one"></div>
+  </div>
+  
+  <div class="bird-container bird-container--two">
+    <div class="bird bird--two"></div>
+  </div>
+  
+  <div class="bird-container bird-container--three">
+    <div class="bird bird--three"></div>
+    
+  </div>
+  
+  <div>
+  <img src="Ressources/anim_avion3.gif" class="disp_interactif" alt="Avion">
+        </div>
+  <div class="bird-container bird-container--four">
+    <div class="bird bird--four"></div>
+    
+  </div>
+  
+</div>
+      </div>
 
      
       <div class="container-fluid p-0" data-section="slide03">
-        <div id="blog-carousel" class="carousel slide" data-ride="carousel" data-bs-ride="carousel">
-      
-          <!-- Ajout des classes "carousel-sm" pour un carrousel plus petit -->
-          <div class="carousel-inner carousel-sm">
+    <div id="blog-carousel" class="carousel slide" data-ride="carousel" data-bs-ride="carousel">
+
+        <!-- Ajout des classes "carousel-sm" pour un carrousel plus petit -->
+        <div class="carousel-inner carousel-sm">
             <div class="carousel-item active">
-              <!-- Ajout des classes "img-fluid" pour rendre l'image réactive et "h-100" pour la hauteur maximale -->
-              <img src="Ressources/avion1.jpg" class="d-block w-100 img-fluid h-100" alt="avion1">
+                <!-- Ajout des classes "img-fluid" pour rendre l'image réactive et "h-100" pour la hauteur maximale -->
+                <img src="Ressources/avion1.jpg" class="d-block w-100 img-fluid h-100" alt="avion1">
+                <!-- Ajout d'un div pour le texte avec les classes "carousel-caption" pour le style de Bootstrap -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="animate__animated animate__fadeIn">Bienvenue dans notre association</h3>
+                    <p class="animate__animated animate__fadeIn">Aéroclub de Frotey-Lès-Lure</p>
+                </div>
             </div>
             <div class="carousel-item">
-              <!-- Utilisation des classes "img-fluid" et "h-100" pour l'image -->
-              <img src="Ressources/avion2.jpg" class="d-block w-100 img-fluid h-100" alt="avion2">
+                <!-- Utilisation des classes "img-fluid" et "h-100" pour l'image -->
+                <img src="Ressources/avion2.jpg" class="d-block w-100 img-fluid h-100" alt="avion2">
+                <!-- Ajout d'un div pour le texte avec les classes "carousel-caption" pour le style de Bootstrap -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="animate__animated animate__fadeIn">Pratiquez l'aviation légère dans un environnement exeptionnel</h3>
+                  <a href="#tarifs">  <button type="button" class="btn btn-secondary">Voir tarifs</button>  </a>
+                </div>
             </div>
             <div class="carousel-item">
-              <!-- Utilisation des classes "img-fluid" et "h-100" pour l'image -->
-              <img src="Ressources/avion3.jpg" class="d-block w-100 img-fluid h-100" alt="avion3">
+                <!-- Utilisation des classes "img-fluid" et "h-100" pour l'image -->
+                <img src="Ressources/avion3.jpg" class="d-block w-100 img-fluid h-100" alt="avion3">
+                <!-- Ajout d'un div pour le texte avec les classes "carousel-caption" pour le style de Bootstrap -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="animate__animated animate__fadeIn">Notre équipe est prête à vous accueillir</h3>
+                    <a href="#équipe">  <button type="button" class="btn btn-secondary">Voir l'équipe</button>  </a>
+                </div>
             </div>
-          </div>
-      
-          <a class="carousel-control-prev" href="#blog-carousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
-          <a class="carousel-control-next" href="#blog-carousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
         </div>
-      </div>
+
+        <a class="carousel-control-prev" href="#blog-carousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+   
+        </a>
+        <a class="carousel-control-next" href="#blog-carousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        
+        </a>
+    </div>
+</div>
+
       
       
       
@@ -636,7 +691,7 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
           
           </div> <br> <br>
          
-          <h1 class="titres" id="evenement">Évènements à venir</h1>
+          <h1 class="titres" id="evenement">Évènements ULM</h1>
           <hr>
 
           <div  class="container" data-bs-theme="dark" >
@@ -924,8 +979,8 @@ echo $form->getForm(); // Affiche le formulaire
             <li><a href="#moyens">Les Moyens Pédagogiques</a></li>
             <li><a href="#equipe">L'Équipe</a></li>
             <li><a href="#evenement">Évènements</a></li>
-            <li><a href="#">Avis</a></li>
-            <li><a href="#">Galerie</a></li>
+            <li><a href="#tarifs">Tarifs</a></li>
+            <li><a href="#localisation">Localisation</a></li>
           </ul>
         </div>
         <div class="col-md-6">
