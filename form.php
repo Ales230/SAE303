@@ -1,10 +1,12 @@
 <?php
+$_SESSION['form_values'] = $_POST; // Stockez toutes les valeurs POST pour les récupérer plus tard
+
 class Form {
     private $action;
     private $method;
     private $fields = [];
 
-    public function __construct($action = "", $method = "post") {
+    public function __construct($action = "traitement.php", $method = "post") {
         $this->action = $action;
         $this->method = $method;
     }

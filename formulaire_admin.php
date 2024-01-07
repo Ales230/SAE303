@@ -15,52 +15,62 @@ $dbName = "bdl-ac2fl";
 $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 
 if ($db->connect_error) {
-    throw new Exception("Connection failed: " . $db->connect_error);
+    throw new Exception("La connexion a échoué : " . $db->connect_error);
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Récupérez les données du formulaire
+    // Get form data
     $idAdherent = $_POST['id_adherent'];
     $idPilote = $_POST['id_pilote'];
     $idAvion = $_POST['id_avion'];
     $dateDebut = $_POST['date_debut'];
     $dateFin = $_POST['date_fin'];
 
-    // Validez les données
+    // Validate data
     $errors = array();
 
-    // Créez une instance de mysqli pour la classe Adherent
+    // Create an instance of mysqli for the Adherent class
     $adherentDb = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
-    
-    // Validez l'existence de l'adhérent
+
+    // Validate the existence of the adherent
     $adherent = new Adherent($data, $adherentDb);
     if (!$adherent->findAdherentById($idAdherent)) {
         $errors[] = "L'adhérent avec l'ID $idAdherent n'existe pas.";
     }
 
-
-    // Validez l'existence de l'avion
+    // Validate the existence of the avion
     $avion = new Avion($db);
     if (!$avion->findAvionById($idAvion)) {
         $errors[] = "L'avion avec l'ID $idAvion n'existe pas.";
     }
 
+    // Check for conflicts with existing reservations
+    $conflictCheckQuery = "SELECT * FROM bdl_reservations 
+                          WHERE ((id_pilote = '$idPilote' AND (debut BETWEEN '$dateDebut' AND '$dateFin' OR fin BETWEEN '$dateDebut' AND '$dateFin')) 
+                          OR (id_adherent = '$idAdherent' AND (debut BETWEEN '$dateDebut' AND '$dateFin' OR fin BETWEEN '$dateDebut' AND '$dateFin')) 
+                          OR (id_avion = '$idAvion' AND (debut BETWEEN '$dateDebut' AND '$dateFin' OR fin BETWEEN '$dateDebut' AND '$dateFin')))";
 
+    $conflictCheckResult = $db->query($conflictCheckQuery);
+
+    if ($conflictCheckResult->num_rows > 0) {
+        $errors[] = "Conflits avec des reservations existantes, veuillez choisir une autre date.";
+    }
 
     if (!empty($errors)) {
         foreach ($errors as $error) {
             echo $error . "<br>";
         }
     } else {
+        // Proceed with reservation creation
         $checkColumnsQuery = "SHOW COLUMNS FROM bdl_reservations WHERE Field IN ('debut', 'fin')";
         $resultColumns = $db->query($checkColumnsQuery);
-    
+
         if ($resultColumns->num_rows == 2) {
             $sql = "INSERT INTO bdl_reservations (id_adherent, id_pilote, id_avion, debut, fin) 
                     VALUES ('$idAdherent', '$idPilote', '$idAvion', '$dateDebut', '$dateFin')";
-    
+
             if ($db->query($sql) === TRUE) {
-                echo "Réservation créée avec succès";
+                echo "Reservation créée avec succès";
             } else {
                 echo "Erreur lors de la création de la réservation : " . $db->error;
             }
@@ -69,6 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 }
+
 $sqlDemandes = "SELECT * FROM bdl_demandes";
 $resultDemandes = $db->query($sqlDemandes);
 ?>
@@ -210,8 +221,8 @@ $resultTableauSynthese = $db->query($sqlTableauSynthese);
     <tr>
         <th>ID Réservation</th>
         <th>ID Adhérent</th>
-        <th>ID Pilote</th>
-        <th>ID Avion</th>
+        <th>Numéro de Licence du pilote</th> <!-- Ajout de la colonne du numéro de licence -->
+        <th>Type d'Avion</th> <!-- Ajout de la colonne du type d'avion -->
         <th>Date de début</th>
         <th>Date de fin</th>
     </tr>
@@ -221,18 +232,132 @@ $resultTableauSynthese = $db->query($sqlTableauSynthese);
             echo "<tr>";
             echo "<td>" . $row['id_reservation'] . "</td>";
             echo "<td>" . $row['id_adherent'] . "</td>";
-            echo "<td>" . $row['id_pilote'] . "</td>";
-            echo "<td>" . $row['id_avion'] . "</td>";
+            
+            // Récupérer le numéro de licence du pilote correspondant à l'ID
+            $piloteId = $row['id_pilote'];
+            $sqlNumLicence = "SELECT numero_licence FROM bdl_pilotes WHERE id_pilote = $piloteId";
+            $resultNumLicence = $db->query($sqlNumLicence);
+            
+            if ($resultNumLicence && $resultNumLicence->num_rows > 0) {
+                $rowNumLicence = $resultNumLicence->fetch_assoc();
+                echo "<td>" . $rowNumLicence['numero_licence'] . "</td>"; // Afficher le numéro de licence du pilote
+            } else {
+                echo "<td>Numéro de licence inconnu</td>"; // Afficher un message si le numéro de licence est introuvable
+            }
+            
+            // Récupérer le type de l'avion correspondant à l'ID
+            $avionId = $row['id_avion'];
+            $sqlTypeAvion = "SELECT type FROM bdl_avions WHERE id_avion = $avionId";
+            $resultTypeAvion = $db->query($sqlTypeAvion);
+            
+            if ($resultTypeAvion && $resultTypeAvion->num_rows > 0) {
+                $rowTypeAvion = $resultTypeAvion->fetch_assoc();
+                echo "<td>" . $rowTypeAvion['type'] . "</td>"; // Afficher le type de l'avion
+            } else {
+                echo "<td>Type d'avion inconnu</td>"; // Afficher un message si le type d'avion est introuvable
+            }
+            
             echo "<td>" . $row['debut'] . "</td>";
             echo "<td>" . $row['fin'] . "</td>";
             echo "</tr>";
         }
     } else {
-        echo "<tr><td colspan='6'>Aucune réservation trouvée.</td></tr>";
+        echo "<tr><td colspan='7'>Aucune réservation trouvée.</td></tr>";
     }
     ?>
 </table>
-</div>
-</main>
+
+
+
+    <h2>Ajouter un pilote</h2>
+    <form action="ajouter_pilote.php" method="POST">
+        <label for="nom">Nom du pilote :</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+        
+        <label for="prenom">Prénom du pilote :</label>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+        
+        <label for="numero_licence">Numéro de licence :</label>
+        <input type="text" id="numero_licence" name="numero_licence" required><br><br>
+        
+        <input type="submit" value="Ajouter le pilote">
+    </form>
+
+    <table border="1">
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Numéro de licence</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php
+    // Connexion à la base de données
+    $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
+
+    // Récupération des pilotes
+    $sql = "SELECT id_pilote, nom, prenom, numero_licence FROM bdl_pilotes";
+    $result = $db->query($sql);
+
+    // Affichage des pilotes
+    while ($pilote = $result->fetch_assoc()) {
+      echo "<tr>";
+      echo "<td>{$pilote['nom']}</td>";
+      echo "<td>{$pilote['prenom']}</td>";
+      echo "<td>{$pilote['numero_licence']}</td>";
+      echo "<td>";
+      // Lien pour modifier le pilote
+      echo "<a href=\"modifier_pilote.php?id_pilote={$pilote['id_pilote']}\">Modifier</a>";
+      // Lien pour supprimer le pilote
+      echo "<a href=\"supprimer_pilote.php?id_pilote={$pilote['id_pilote']}\">Supprimer</a>";
+      echo "</td>";
+      echo "</tr>";
+    }
+    ?>
+  </tbody>
+</table>
+    <h2>Ajouter un avion</h2>
+    <form action="ajouter_avion.php" method="POST">
+        <label for="type_avion">Type d'avion :</label>
+        <input type="text" id="type_avion" name="type_avion" required><br><br>
+        
+        <input type="submit" value="Ajouter l'avion">
+    </form>
+
+    <h2>Liste des avions</h2>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php
+    // Connexion à la base de données
+    $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
+
+    // Récupération des avions
+    $sql = "SELECT id_avion, type FROM bdl_avions";
+    $result = $db->query($sql);
+
+    // Affichage des avions
+    while ($avion = $result->fetch_assoc()) {
+      echo "<tr>";
+      echo "<td>{$avion['type']}</td>";
+      echo "<td>";
+      // Lien pour modifier l'avion
+      echo "<a href=\"modifier_avion.php?id_avion={$avion['id_avion']}\">Modifier</a>";
+      // Lien pour supprimer l'avion
+      echo "<a href=\"supprimer_avion.php?id_avion={$avion['id_avion']}\">Supprimer</a>";
+      echo "</td>";
+      echo "</tr>";
+    }
+    ?>
+  </tbody>
+</table>
+
 </body>
 </html>
