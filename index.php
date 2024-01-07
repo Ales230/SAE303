@@ -54,7 +54,7 @@
           <a class="nav-link" href="#avis">Avis</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#galerie">Localisation</a>
+          <a class="nav-link" href="#localisation">Localisation</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#footer">Contact</a>
@@ -634,42 +634,68 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
               </div>
             </div>
           
-          </div>
+          </div> <br> <br>
          
           <h1 id="evenement">Évènements à venir</h1>
           <hr>
 
-          <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <div  class="container" data-bs-theme="dark" >
+      <div class="row justify-content-center mt-8">
+            <!-- First Card -->
+            <div class="col-md-4 mb-6">
+                <div class="card" style="width: 22rem; height: 38rem;">
+                <a  href="https://mondialulm.fr/fr/">  <img src="Ressources/event1.png" class="card-img-top" alt="image evenement"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Mondial de l'ULM 2023 à Blois</h5>
+                      <br>
+
+                        <p class="card-text"> Le Salon mondial de l'ULM 2023 a marqué un moment mémorable, rassemblant l'élite de l'aviation légère pour présenter les dernières innovations, technologies et tendances, offrant ainsi une vision passionnante de l'avenir de l'aviation légère à l'échelle mondiale.</p>
+                        <a  href="https://mondialulm.fr/fr/"> <button class="btn btn-secondary" type="button" >En savoir plus</button></a>
+    
+                       
+                    </div>
+                </div>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="événement 1" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="événement 2" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="événement 3" class="d-block w-100" alt="...">
-              </div>
+        
+    
+            <!-- Second Card -->
+            <div class="col-md-4 mb-6">
+                <div class="card" style="width: 22rem; height: 38rem;">
+                <a  href="https://www.vosgesmatin.fr/vosges/2013/07/28/envolee-d-ulm-a-remomeix"> <img src="Ressources/event2.jpg" class="card-img-top" alt="évènement ulm à Remomeix" /> </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Envolée d’ULM à Remomeix </h5>
+                        <br>
+
+                        <p class="card-text">Rassemblant environ 300 participants, le « Tour ULM » a pris son départ hier matin à l’aérodrome. À l’issue de plusieurs escales en Allemagne, les pilotes seront de retour vendredi.</p><br><br>
+                        <a  href="https://www.vosgesmatin.fr/vosges/2013/07/28/envolee-d-ulm-a-remomeix">  <button class="btn btn-secondary" type="button" >En savoir plus</button></a>
+    
+                        
+                    </div>
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+    
+            <!-- Third Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 22rem; height: 38rem;">
+                <a href="https://www.lejsl.com/edition-macon/2018/07/21/le-tour-ulm-est-parti-de-macon-ce-samedi-matin" > <img src="Ressources/event3.jpg" class="card-img-top" alt="tour ulm mâcon" /> </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Le Tour ULM est parti de Mâcon ce samedi matin</h5>
+                     
+                        Près de 140 ULM - multiaxes, pendulaires et autogyres - participant au 23e  Tour ULM, organisé par la FFPLUM sont partis de l’aérodome de Mâcon, samedi matin. Après une semaine d’épreuves qui les mèneront en Belgique et sur les côtes normandes.</p><br>
+                        <a href="https://www.lejsl.com/edition-macon/2018/07/21/le-tour-ulm-est-parti-de-macon-ce-samedi-matin" >   <button class="btn btn-secondary" type="button" >En savoir plus</button></a>
+    
+                      
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+                    </div>
 
          
 	
 	<!-- Map -->
-  <h1 id="equipe">Localisez Nous</h1>
+  <h1 id="localisation">Localisez Nous</h1>
         <br>
 		<p>Notre association se situe à proximité de Frotey-Les-Lures</p>
     <hr>
