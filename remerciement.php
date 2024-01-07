@@ -4,12 +4,19 @@ session_start();
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<link rel="stylesheet" href="Styles/remerciement.css">
     <meta charset="UTF-8">
     <title>Confirmation d'adhésion</title>
 </head>
 <body>
-    <h1>Confirmation d'adhésion</h1>
-    <p>Merci pour votre adhésion. Voici les informations que vous avez saisies :</p>
+<header>
+<h1>Confirmation d'adhésion</h1>
+    </header>
+    <main>
+    <div class="txt">
+    <p>Merci pour votre adhésion. <br>Voici les informations que vous avez saisies :</p>
+</div>
+    <div class="txt2">
     <?php
     // Vérifiez si les valeurs du formulaire sont présentes dans la session
     if (isset($_SESSION['form_values'])) {
@@ -51,5 +58,10 @@ session_start();
         echo "<p>Votre numéro d'adhérent est : " . htmlspecialchars($insertedId) . "</p>";
     }
     ?>
+    </div>
+    <div class="button">
+    <a href="index.php">Retourner vers l'accueil</a>
+</div>
+</main>
 </body>
 </html>

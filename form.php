@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="Styles/form.css">
 <?php
 $_SESSION['form_values'] = $_POST; // Stockez toutes les valeurs POST pour les récupérer plus tard
 

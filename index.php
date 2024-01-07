@@ -59,6 +59,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#footer">Contact</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.php" >Profil</a>
+        </li>
 
         
       </ul>
@@ -535,7 +538,7 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
                       <li class="list-group-item">Draps fournis.</li>
                       <li class="list-group-item">Caution 100 euros.</li>
                     </ul> <br>
-                    <button type="button" class="btn btn-secondary">Résever</button>
+                    <button type="button" class="btn btn-secondary">Réserver</button>
 
 
 
@@ -909,11 +912,11 @@ echo $form->getForm(); // Affiche le formulaire
     <div class="row">
       <div class="col-md-3 footer-brand animated fadeInLeft">
         <img id="logofooter" src="Ressources/AC2FL.png" alt="logo"> <br>
-        <p>Association enregistrée n°04674 - - Agrément n° AS70986858</p>
+        <br><p>Association enregistrée n°04674 - - Agrément n° AS70986858</p>
         <p>© 2024 Aéro-Club de Frotey-les-Lure appelé sous le terme ACF2L, Tous les droits réservés</p>
       </div>
       <div class="col-md-4 footer-nav animated fadeInUp">
-        <h4>Menu </h4>
+        <h4 class="txt-footer-menu">Menu </h4>
         <div class="col-md-6">
           <ul class="pages">
             <li><a href="#acti">Nos activités</a></li>
@@ -938,6 +941,14 @@ echo $form->getForm(); // Affiche le formulaire
         <h4>Suivez nous</h4>
         <ul>
           <!-- Liens vers les réseaux sociaux -->
+          <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"  crossorigin="anonymous"></script>
+          <div class="rounded-social-buttons">
+                    <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
         </ul>
       </div>
       <div class="col-md-3 footer-ns animated fadeInRight">

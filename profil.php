@@ -76,12 +76,15 @@ $reservations_adherent = $stmt_reservations->fetchAll(PDO::FETCH_ASSOC);
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="Styles/profil.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil de l'adhérent</title>
+    <title>Mon Profil</title>
 </head>
 <body>
-    <h2>Profil de l'adhérent</h2>
-
+<header>
+        <h1>Mon profil</h1>
+    </header>
+<main>
     <form method="post" action="profil.php">
         <table>
             <tr>
@@ -191,7 +194,7 @@ $reservations_adherent = $stmt_reservations->fetchAll(PDO::FETCH_ASSOC);
 </table>
 
 
-
+</main>
 </body>
 </html>
 

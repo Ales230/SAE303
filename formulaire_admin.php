@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/formulaire_admin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Formulaire administrateur</title>
+</head>
+<body>
+<header>
+        <h1>Formulaire administrateur</h1>
+    </header>
+<main>
 <?php
 session_start(); // Démarrez la session au début du script
 // Vérifier si la session existe et si l'utilisateur a le rôle admin
@@ -90,7 +105,7 @@ $resultDemandes = $db->query($sqlDemandes);
 ?>
 
 
-
+<div class="liste_demande">
 <h2>Liste des demandes</h2>
 <table>
     <tr>
@@ -133,6 +148,8 @@ $resultDemandes = $db->query($sqlDemandes);
         echo "<tr><td colspan='6'>Aucune demande trouvée.</td></tr>";
     }
     ?>
+    </div>
+<div class="nouv_reserv">
 </table>
 <h2>Nouvelle Réservation</h2>
 <form method="post" action="">
@@ -184,28 +201,9 @@ $sqlTableauSynthese = "SELECT * FROM bdl_reservations";
 $resultTableauSynthese = $db->query($sqlTableauSynthese);
 ?>
 
-<html>
-<head>
-    <title>Tableau de synthèse</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
 
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
 
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
-</head>
-<body>
-
+<div class="tab_synthese">
 <h2>Tableau de synthèse des réservations</h2>
 <table>
     <tr>
@@ -256,9 +254,9 @@ $resultTableauSynthese = $db->query($sqlTableauSynthese);
     }
     ?>
 </table>
+</div>
 
-
-
+<div class="add_pilote">
     <h2>Ajouter un pilote</h2>
     <form action="ajouter_pilote.php" method="POST">
         <label for="nom">Nom du pilote :</label>
@@ -308,6 +306,8 @@ $resultTableauSynthese = $db->query($sqlTableauSynthese);
     ?>
   </tbody>
 </table>
+</div>
+<div class="add_avion">
     <h2>Ajouter un avion</h2>
     <form action="ajouter_avion.php" method="POST">
         <label for="type_avion">Type d'avion :</label>
@@ -315,7 +315,8 @@ $resultTableauSynthese = $db->query($sqlTableauSynthese);
         
         <input type="submit" value="Ajouter l'avion">
     </form>
-
+</div>
+<div class="liste_avion">
     <h2>Liste des avions</h2>
 <table border="1">
   <thead>
@@ -348,6 +349,9 @@ $resultTableauSynthese = $db->query($sqlTableauSynthese);
     ?>
   </tbody>
 </table>
+</div>
+
+</main>
 
 </body>
 </html>
