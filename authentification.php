@@ -21,13 +21,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->execute();
 
         $utilisateur_enregistre = $stmt->fetch(PDO::FETCH_ASSOC);
-        $_SESSION['role'] = $utilisateur_enregistre['role']; // Définissez le rôle de l'utilisateur
-        $id_adherent = $_SESSION['id_adherent'];
-
-        
 
         if ($utilisateur_enregistre) {
-            // Vérifier si l'utilisateur est un admin
+            $_SESSION['role'] = $utilisateur_enregistre['role']; 
+            $_SESSION['id_adherent'] = $utilisateur_enregistre['id_adherent']; // Enregistrez l'ID de l'adhérent en session
+
+            // Vérifier le rôle de l'utilisateur pour la redirection
             if ($utilisateur_enregistre['role'] === 'admin') {
                 // Redirection vers la page formulaire_admin.php si l'utilisateur est admin
                 header("Location: formulaire_admin.php");
