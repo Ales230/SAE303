@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 exit();
             } elseif ($utilisateur_enregistre['role'] === 'membre') {
                 // Redirection vers la page formulaire_membre.php si l'utilisateur est membre
-                header("Location: formulaire_membre.php");
+                header("Location: profil.php");
                 exit();
             } else {
                 echo "Accès non autorisé pour cet utilisateur.";
