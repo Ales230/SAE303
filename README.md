@@ -33,8 +33,6 @@ Pour contribuer ou tester localement, suivez ces étapes :
    git clone https://github.com/Ales230/SAE303.git
    cd SAE303
 
-   Bien sûr, voici une version adaptée du README.md pour un projet de refonte du site de l'association AC2FL, en utilisant Bootstrap comme framework front-end. N'oubliez pas de personnaliser les détails en fonction des besoins spécifiques de votre projet.
-
 markdown
 
 
