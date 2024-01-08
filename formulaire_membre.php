@@ -60,17 +60,21 @@ sort($dates_indisponibles_formatted);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire de Réservation pour les Membres</title>
+    <title>Formulaire de Réservation</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="Styles/formulaire_membre.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </head>
 <body>
+<header>
+        <h1>Formulaire de réservation</h1>
+    </header>
 
-    <h2>Formulaire de Réservation pour les Membres</h2>
+    
 
     <form method="post" action="traitement_membre.php">
-        <label for="id_avion">Type d'appareil :</label>
+        <label class="label_date"for="id_avion">Type d'appareil :</label>
         <select id="id_avion" name="id_avion" required>
             <?php foreach ($avions as $avion) : ?>
                 <option value="<?php echo $avion['id_avion']; ?>">
@@ -80,13 +84,14 @@ sort($dates_indisponibles_formatted);
         </select><br><br>
 
         <label for="date_debut">Date de début :</label>
-        <input type="text" id="date_debut" name="date_debut" autocomplete="off"  required><br><br>
+        <input type="text" id="date_debut" name="date_debut" autocomplete="off"  required placeholder="Choisissez une date de début"><br><br>
 
         <label for="date_fin">Date de fin :</label>
-        <input type="text" id="date_fin" name="date_fin"  autocomplete="off" required ><br><br>
+        <input type="text" id="date_fin" name="date_fin"  autocomplete="off" required placeholder="Choisissez une date de fin"><br><br>
 
         <input type="submit" value="Valider la réservation">
     </form>
+    
     <script>
         // Récupérer les dates indisponibles depuis PHP
         let datesIndisponibles = <?php echo json_encode($dates_indisponibles); ?>;
@@ -118,7 +123,12 @@ $("#date_fin").datepicker({
 
     </script>
 
-
+<style>
+        body {
+    background: url(Ressources/fond_login.jpg) no-repeat;
+    background-size:cover;
+}
+</style>
 </body>
 </html>
 

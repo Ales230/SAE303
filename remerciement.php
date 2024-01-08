@@ -62,6 +62,9 @@ session_start();
     <div class="button">
     <a href="index.php">Retourner vers l'accueil</a>
 </div>
+<div class="button2">
+    <a href="profil.php">Voir votre profil</a>
+</div>
 </main>
 </body>
 </html>
