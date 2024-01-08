@@ -204,57 +204,64 @@ $resultTableauSynthese = $db->query($sqlTableauSynthese);
 
 
 <div class="tab_synthese">
-<h2>Tableau de synthèse des réservations</h2>
-<table>
-    <tr>
-        <th>ID Réservation</th>
-        <th>ID Adhérent</th>
-        <th>Numéro de Licence du pilote</th> <!-- Ajout de la colonne du numéro de licence -->
-        <th>Type d'Avion</th> <!-- Ajout de la colonne du type d'avion -->
-        <th>Date de début</th>
-        <th>Date de fin</th>
-    </tr>
-    <?php
-    if ($resultTableauSynthese->num_rows > 0) {
-        while ($row = $resultTableauSynthese->fetch_assoc()) {
-            echo "<tr>";
-            echo "<td>" . $row['id_reservation'] . "</td>";
-            echo "<td>" . $row['id_adherent'] . "</td>";
-            
-            // Récupérer le numéro de licence du pilote correspondant à l'ID
-            $piloteId = $row['id_pilote'];
-            $sqlNumLicence = "SELECT numero_licence FROM bdl_pilotes WHERE id_pilote = $piloteId";
-            $resultNumLicence = $db->query($sqlNumLicence);
-            
-            if ($resultNumLicence && $resultNumLicence->num_rows > 0) {
-                $rowNumLicence = $resultNumLicence->fetch_assoc();
-                echo "<td>" . $rowNumLicence['numero_licence'] . "</td>"; // Afficher le numéro de licence du pilote
-            } else {
-                echo "<td>Numéro de licence inconnu</td>"; // Afficher un message si le numéro de licence est introuvable
+    <h2>Tableau de synthèse des réservations</h2>
+    <table>
+        <tr>
+            <th>ID Réservation</th>
+            <th>ID Adhérent</th>
+            <th>Nom du Pilote</th>
+            <th>Prénom du Pilote</th>
+            <th>Numéro de Licence du pilote</th>
+            <th>Type d'Avion</th>
+            <th>Date de début</th>
+            <th>Date de fin</th>
+        </tr>
+        <?php
+        // Votre code existant pour la connexion à la base de données...
+
+        if ($resultTableauSynthese->num_rows > 0) {
+            while ($row = $resultTableauSynthese->fetch_assoc()) {
+                echo "<tr>";
+                echo "<td>" . $row['id_reservation'] . "</td>";
+                echo "<td>" . $row['id_adherent'] . "</td>";
+                
+                // Récupérer les détails du pilote
+                $piloteId = $row['id_pilote'];
+                $sqlPiloteDetails = "SELECT nom, prenom, numero_licence FROM bdl_pilotes WHERE id_pilote = $piloteId";
+                $resultPiloteDetails = $db->query($sqlPiloteDetails);
+                
+                if ($resultPiloteDetails && $resultPiloteDetails->num_rows > 0) {
+                    $piloteDetails = $resultPiloteDetails->fetch_assoc();
+                    echo "<td>" . $piloteDetails['nom'] . "</td>";
+                    echo "<td>" . $piloteDetails['prenom'] . "</td>";
+                    echo "<td>" . $piloteDetails['numero_licence'] . "</td>";
+                } else {
+                    echo "<td colspan='3'>Détails du pilote indisponibles</td>";
+                }
+                
+                // Récupérer le type de l'avion correspondant à l'ID
+                $avionId = $row['id_avion'];
+                $sqlTypeAvion = "SELECT type FROM bdl_avions WHERE id_avion = $avionId";
+                $resultTypeAvion = $db->query($sqlTypeAvion);
+                
+                if ($resultTypeAvion && $resultTypeAvion->num_rows > 0) {
+                    $rowTypeAvion = $resultTypeAvion->fetch_assoc();
+                    echo "<td>" . $rowTypeAvion['type'] . "</td>";
+                } else {
+                    echo "<td>Type d'avion inconnu</td>";
+                }
+                
+                echo "<td>" . $row['debut'] . "</td>";
+                echo "<td>" . $row['fin'] . "</td>";
+                echo "</tr>";
             }
-            
-            // Récupérer le type de l'avion correspondant à l'ID
-            $avionId = $row['id_avion'];
-            $sqlTypeAvion = "SELECT type FROM bdl_avions WHERE id_avion = $avionId";
-            $resultTypeAvion = $db->query($sqlTypeAvion);
-            
-            if ($resultTypeAvion && $resultTypeAvion->num_rows > 0) {
-                $rowTypeAvion = $resultTypeAvion->fetch_assoc();
-                echo "<td>" . $rowTypeAvion['type'] . "</td>"; // Afficher le type de l'avion
-            } else {
-                echo "<td>Type d'avion inconnu</td>"; // Afficher un message si le type d'avion est introuvable
-            }
-            
-            echo "<td>" . $row['debut'] . "</td>";
-            echo "<td>" . $row['fin'] . "</td>";
-            echo "</tr>";
+        } else {
+            echo "<tr><td colspan='8'>Aucune réservation trouvée.</td></tr>";
         }
-    } else {
-        echo "<tr><td colspan='7'>Aucune réservation trouvée.</td></tr>";
-    }
-    ?>
-</table>
+        ?>
+    </table>
 </div>
+
 
 <div class="add_pilote">
     <h2>Ajouter un pilote</h2>
