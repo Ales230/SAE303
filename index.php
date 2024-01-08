@@ -778,8 +778,13 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
 								<li>Gonflage et pilotage d'un parapente au sol</li>
 								<li>Comprend un vol de 20 mn en biplace</li>
 							  </ul>
-							  <button class="btn btn-secondary" type="button">Réserver</button>
-
+							  <button class="btn btn-secondary" onclick="redirigerVersleFormulaire()"type="button">Réserver</button>
+                <script>
+    function redirigerVersleFormulaire() {
+        
+        window.location.href = "formulaire_membre.php";
+    }
+</script>
 							</div>
 						  </div>
 						</div>
@@ -796,7 +801,13 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
 								<li>10 vols minimum</li>							
 								<li>Un cours de perfectionnement offert</li>
 							  </ul>
-							  <button class="btn btn-secondary" type="button">Réserver</button>
+							  <button class="btn btn-secondary" onclick="redirigerVersleFormulaire()"type="button">Réserver</button>
+                <script>
+    function redirigerVersleFormulaire() {
+        
+        window.location.href = "formulaire_membre.php";
+    }
+</script>
 
 							</div>
 						  </div>
@@ -814,7 +825,13 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
 								<li>4 vols minimum</li>
 								<li>Sensibilisation aux facteurs humains</li>
 							  </ul>
-							  <button class="btn btn-secondary" type="button">Réserver</button>
+							  <button class="btn btn-secondary" onclick="redirigerVersleFormulaire()"type="button">Réserver</button>
+                <script>
+    function redirigerVersleFormulaire() {
+        
+        window.location.href = "formulaire_membre.php";
+    }
+</script>
 
 							</div>
 						  </div>
@@ -832,7 +849,13 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
 								  <li>Possibilité de promenade à la carte</li>
 								  
 								</ul>
-								<button class="btn btn-secondary" type="button">Réserver</button>
+								<button class="btn btn-secondary" onclick="redirigerVersleFormulaire()"type="button">Réserver</button>
+                <script>
+    function redirigerVersleFormulaire() {
+        
+        window.location.href = "formulaire_membre.php";
+    }
+</script>
 
 							  </div>
 							</div>
@@ -850,7 +873,13 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
 								  <li>Avoir licence FFPLUM ou FFV</li>
 								  
 								</ul>
-								<button class="btn btn-secondary" type="button">Réserver</button>
+								<button class="btn btn-secondary" onclick="redirigerVersleFormulaire()"type="button">Réserver</button>
+                <script>
+    function redirigerVersleFormulaire() {
+        
+        window.location.href = "formulaire_membre.php";
+    }
+</script>
 
 							  </div>
 							</div>
@@ -869,7 +898,13 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
 								  <li>Avoir licence FFPLUM ou FFV</li>
 								  
 								</ul>
-								<button class="btn btn-secondary" type="button">Réserver</button>
+								<button class="btn btn-secondary" onclick="redirigerVersleFormulaire()"type="button">Réserver</button>
+                <script>
+    function redirigerVersleFormulaire() {
+        
+        window.location.href = "formulaire_membre.php";
+    }
+</script>
 
 							  </div>
 							</div>
