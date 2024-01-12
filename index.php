@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="icon" href="Ressources/AC2FL.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <title>AC2FL - Aéroclub de Frotey-Les-Lure</title>
@@ -22,18 +23,18 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.php">
-            <img src="Ressources/AC2FL.png" alt="Logo" width="50" height="50">
+            <img class="logo"src="Ressources/AC2FL.png" alt="Logo" width="50" height="50">
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#acti">Nos Activités</a>
+          <a class="nav-link" href="#acti"><p class="p-nav-btn">Nos Activités</p></a>
         </li>
 
         <li class="nav-item ">
-          <a class="nav-link " href="#catégorie">
+          <a class="nav-link " href="#catégorie"><p class="p-nav-btn">
             Catégories d'ULM
-          </a>
+            </p></a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#"></a></li>
             <li><a class="dropdown-item" href="#"></a></li>
@@ -41,29 +42,29 @@
             <li><a class="dropdown-item" href="#"></a></li>
           </ul>
         </li>
-
+        <div class="nav-btn">
         <li class="nav-item">
-          <a class="nav-link" href="#moyens">Les Moyens Pédagogiques</a>
+          <a class="nav-link" href="#moyens"><p class="p-nav-btn">Les Moyens Pédagogiques</p></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#equipe">L'Équipe</a>
+          <a class="nav-link" href="#equipe"><p class="p-nav-btn">L'Équipe</p></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#evenement">Évènements</a>
+          <a class="nav-link" href="#evenement"><p class="p-nav-btn">Évènements</p></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#tarifs">Tarifs</a>
+          <a class="nav-link" href="#tarifs"><p class="p-nav-btn">Tarifs</p></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#localisation">Localisation</a>
+          <a class="nav-link" href="#localisation"><p class="p-nav-btn">Localisation</p></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#footer">Contact</a>
+          <a class="nav-link" href="#footer"><p class="p-nav-btn">Contact</p></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login.php" >Profil</a>
+          <a class="nav-link" href="login.php" ><p class="p-nav-btn"><i class="ri-user-fill"></i></p></a>
         </li>
-
+        </div>
         
       </ul>
 
