@@ -1071,15 +1071,11 @@ echo $form->getForm(); // Affiche le formulaire
         </ul>
       </div>
       <div class="col-md-3 footer-ns animated fadeInRight">
-        <h4>Newsletter</h4>
-        <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+        <h4>Localisation</h4>
+        <p>62, Avenue de la République, 70200 Lure</p>
         <p>
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search for...">
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
-            </span>
-          </div><!-- /input-group -->
+        <a href="#localisation">  <button type="button" class="btn btn-secondary">Retrouvez-nous</button>  </a>
+          </div>
         </p>
       </div>
     </div>
