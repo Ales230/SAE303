@@ -48,7 +48,7 @@ class Form {
                 $form .= '><br>';
             }
         }
-        $form .= '<input type="submit" value="Soumettre"></form>';
+        $form .= '<input type="submit" value="Envoyer"></form>';
         return $form;
     }
 }

@@ -930,8 +930,12 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
 		</div>
 	</section>
 	<!--Map Ends -->
-
+  
+  <link rel="stylesheet" href="Styles/form.css">
+<div class="form-index">
+  <h1>ENVOLEZ-VOUS !</h1>
 <?php
+
 require_once("form.php");
 require_once("formvalidator.php");
 
@@ -951,7 +955,7 @@ $form->addField("Activités demandées", "checkbox", "activites", ["Formation de
 
 echo $form->getForm(); // Affiche le formulaire
 ?>
-
+</div>
 
 
 <div class="container">
@@ -1044,11 +1048,11 @@ echo $form->getForm(); // Affiche le formulaire
           </ul>
         </div>
         <div class="col-md-6">
-          <ul class="list">
+          <ul class="pages">
             <!-- Liens modaux -->
-            <li><a href="#" data-toggle="modal" data-target="#aProposModal">À propos</a></li>
-            <li><a href="#" data-toggle="modal" data-target="#confidentialiteModal">Politique de confidentialité</a></li>
-            <li><a href="#">Contacts</a></li>
+            <li><a class="footer-title"href="#" data-toggle="modal" data-target="#aProposModal">À propos</a></li>
+            <li><a class="footer-title"href="#" data-toggle="modal" data-target="#confidentialiteModal">Politique de confidentialité</a></li>
+            <li><a class="footer-title"href="#">Contacts</a></li>
           </ul>
         </div>
       </div>
