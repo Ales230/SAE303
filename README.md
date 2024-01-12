@@ -13,7 +13,8 @@ Ce projet vise à moderniser et améliorer le site web de l'Association (AC2FL),
 
 ## Aperçu
 
-![image](https://github.com/Ales230/SAE303/assets/115214794/26fa2848-c65c-4d92-b4ff-e3ac27a0f0e7)
+![image](https://github.com/Ales230/SAE303/assets/115214794/5249ce25-4eb6-4ec9-9d68-4823cb4cde39)
+
 
 
 ## Technologies utilisées
