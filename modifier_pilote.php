@@ -1,3 +1,4 @@
+
 <?php
 
 $dbHost = "localhost";
@@ -46,88 +47,19 @@ if(isset($_GET['id_pilote'])) {
 
     if ($result->num_rows > 0) {
         $pilote = $result->fetch_assoc();
-?>
+
         
-<?php
+
     } else {
         echo "Aucun pilote trouvé avec cet identifiant.";
     }
 } else {
     echo "";
 }
+
 ?>
-<?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "bdl-ac2fl";
-$db = new mysqli($servername, $username, $password, $dbname);
 
-// Vérifie si le formulaire a été soumis
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
-    // Récupère les données du formulaire
-    $nom = $_POST['nom'];
-    $prenom = $_POST['prenom'];
-    $numero_licence = $_POST['numero_licence'];
-
-    // Vérifie la validité des données
-    if (empty($nom) || empty($prenom) || empty($numero_licence)) {
-        echo 'Veuillez remplir tous les champs obligatoires.';
-        exit;
-    }
-
-    // Insère les données dans la base de données
-    $sql = "INSERT INTO bdl_pilotes (nom, prenom, numero_licence)
-    VALUES ('$nom', '$prenom', '$numero_licence');";
-    $result = $db->query($sql);
-
-    // Vérifie le résultat de l'insertion
-    if ($result === TRUE) {
-        echo 'Le pilote a été ajouté avec succès.';
-    } else {
-        echo 'Erreur lors de l\'ajout du pilote : ' . $db->error;
-    }
-}
-?>
-<?php
-session_start();
-
-if (!(isset($_SESSION['role']) && $_SESSION['role'] === 'admin')) {
-    header('Location: login.php');
-    exit();
-}
-
-$dbHost = "localhost";
-$dbUsername = "root";
-$dbPassword = "";
-$dbName = "bdl-ac2fl";
-
-$db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
-
-if ($db->connect_error) {
-    throw new Exception("La connexion a échoué : " . $db->connect_error);
-}
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id_demande'])) {
-    $idDemande = $_POST['id_demande'];
-
-    // Utilisez la méthode de la classe Database pour préparer et exécuter la requête
-    $deleteDemandeQuery = "DELETE FROM bdl_demandes WHERE id_demande = ?";
-    
-    $stmt = $db->prepare($deleteDemandeQuery);
-    $stmt->bind_param('i', $idDemande);
-    
-    if ($stmt->execute()) {
-        echo "";
-    } else {
-        echo "Une erreur s'est produite lors de la suppression de la demande : " . $stmt->error;
-    }
-} else {
-    echo "ID de demande non spécifié.";
-}
-?>
 
 
 <!DOCTYPE html>
@@ -137,6 +69,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id_demande'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/authentification.css">
     <link rel="icon" href="Ressources/AC2FL.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Félicitations !</title>
     <style>
@@ -166,6 +100,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id_demande'])) {
 </head>
 <body>
 <header>
+<a href ="formulaire_admin.php"class="btn-home"  ><i class="ri-home-2-line"></i></a>
+
         <h1>Modifier un pilote</h1>
     </header>
     <div class="container">
@@ -195,3 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id_demande'])) {
 
 
 
+
+</style>
+</body>
+</html>

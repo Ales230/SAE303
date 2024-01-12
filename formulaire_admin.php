@@ -154,6 +154,7 @@ $resultDemandes = $db->query($sqlDemandes);
     </div>
 <div class="nouv_reserv">
 </table>
+<br>
 <h2>Nouvelle Réservation</h2>
 <form method="post" action="">
     <!-- Sélectionnez l'adhérent -->

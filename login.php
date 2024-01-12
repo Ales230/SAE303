@@ -23,7 +23,7 @@
                 <button class="submit_class" type="submit" form="login_form" >Connexion</button>
             </div>
             <div class="info_div">
-                <p>Vous n'êtes pas adhérent ? <a href="register/reg-form.php" class="contact">Cliquez ici</a> pour nous contacter.</p>
+                <p>Vous n'êtes pas adhérent ? <a href="index.php#formulaire" class="contact">Cliquez ici</a> pour nous contacter.</p>
             </div>
         </form>
     </main>

@@ -8,6 +8,7 @@ $dbName = "bdl-ac2fl";
 
 $dbname = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 session_start();
+
 if (!(isset($_SESSION['role']) && $_SESSION['role'] === 'admin')) {
     header('Location: login.php');
     exit();
@@ -15,20 +16,8 @@ if (!(isset($_SESSION['role']) && $_SESSION['role'] === 'admin')) {
 
 require_once('database.php');
 
-if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id_avion'])) {
-    $id_avion = $_GET['id_avion'];
 
-    // Supprimer l'avion correspondant à l'ID de la base de données
-    $sql = "DELETE FROM bdl_avions WHERE id_avion=$id_avion";
 
-    if ($dbname->query($sql) === TRUE) {
-        echo 'L\'avion a été supprimé avec succès.';
-    } else {
-        echo 'Erreur lors de la suppression de l\'avion : ' . $dbname->error;
-    }
-} else {
-    echo "Identifiant de l'avion non spécifié ou méthode non autorisée.";
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -67,19 +56,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id_avion'])) {
 </head>
 <body>
 <header>
-<a href ="index.php"class="btn-home"  ><i class="ri-home-2-line"></i></a>
+<a href ="formulaire_admin.php"class="btn-home"  ><i class="ri-home-2-line"></i></a>
         <h1>Supprimer un avion</h1>
     </header>
     <div class="container">
+        <?php
+        if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id_avion'])) {
+            $id_avion = $_GET['id_avion'];
         
-            
-        <form  class="form_div"action="modifier_avion.php" method="POST">
-            <input type="hidden" name="id_avion" value="<?php echo $avion['id_avion']; ?>">
-            <label for="type_avion">Type d'avion :</label>
-            <input class="field_class"type="text" id="type_avion" name="type_avion" value="<?php echo $avion['type']; ?>" required><br><br>
-
-            <input type="submit" class="submit_class"value="Valider les modifications">
-        </form>
+            // Supprimer les demandes associées à l'avion
+            $sql_delete_demandes = "DELETE FROM bdl_demandes WHERE id_avion=$id_avion";
+            $result_delete_demandes = $dbname->query($sql_delete_demandes);
+        
+            if ($result_delete_demandes === TRUE) {
+                // Maintenant, vous pouvez supprimer l'avion en toute sécurité
+                $sql_delete_avion = "DELETE FROM bdl_avions WHERE id_avion=$id_avion";
+        
+                if ($dbname->query($sql_delete_avion) === TRUE) {
+                    echo 'L\'avion et les demandes associées ont été supprimés avec succès.';
+                } else {
+                    echo 'Erreur lors de la suppression de l\'avion : ' . $dbname->error;
+                }
+            } else {
+                echo 'Erreur lors de la suppression des demandes : ' . $dbname->error;
+            }
+        } else {
+            echo "Identifiant de l'avion non spécifié ou méthode non autorisée.";
+        }
+        ?>
+<!-- Bouton pour revenir à la page précédente -->
+<button class="submit_class" type="submit" form="login_form" onclick="goBack()">Continuer</button>
+    </div>
 
     <script>
         function goBack() {

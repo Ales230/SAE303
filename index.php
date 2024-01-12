@@ -59,6 +59,9 @@
           <a class="nav-link" href="#localisation"><p class="p-nav-btn">Localisation</p></a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="#formulaire"><p class="p-nav-btn">Devenir adhérent</p></a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#footer"><p class="p-nav-btn">Contact</p></a>
         </li>
         <li class="nav-item">
@@ -933,7 +936,7 @@ Avec des installations de restauration sur place, nous veillons à ce que vous p
   
   <link rel="stylesheet" href="Styles/form.css">
 <div class="form-index">
-  <h1>ENVOLEZ-VOUS !</h1>
+  <h1 id="formulaire">ENVOLEZ-VOUS !</h1>
 <?php
 
 require_once("form.php");
