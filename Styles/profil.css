@@ -115,3 +115,10 @@ td a:hover {
     position:absolute;
     font-size:3rem;
 }
+.btn-danger{
+    text-decoration:none;
+    color:white;
+    margin-left:1400px;
+    position:absolute;
+    font-size:3rem;
+}

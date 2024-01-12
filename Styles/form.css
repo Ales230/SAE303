@@ -4,10 +4,11 @@
     margin-top:250px;
     max-width: 400px;
     margin: 50px auto;
-    background-color: #fff;
+    background-color: #2b2a2a;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(37, 36, 36, 0.1);
+    color:white;
 }
 
 label {
@@ -32,8 +33,8 @@ textarea {
     font-family: 'system-ui';
     font-size: 0.9rem;
     letter-spacing: 2px;
-    background-color:white;
-    color: black;
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 input[type="checkbox"],
@@ -53,9 +54,9 @@ input[type="submit"] {
     display: block;
     margin: auto;
     margin-top: 10px;
-    box-shadow: 2px 2px 5px rgb(0,0,0,0.2);
+    box-shadow: 2px 2px 5px rgba(109, 103, 103, 0.2);
     cursor: pointer;
-    color:black;
+    color:rgb(255, 255, 255);
 }
 
 input[type="submit"]:hover {

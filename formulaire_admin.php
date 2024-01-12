@@ -12,8 +12,11 @@
 </head>
 <body>
 <header>
+<h1>Formulaire administrateur</h1>
 <a href ="index.php"class="btn-home"  ><i class="ri-home-2-line"></i></a>
-        <h1>Formulaire administrateur</h1>
+<a href="deconnexion.php" class="btn btn-danger"><i class="nav-item">Déconnexion</i></a>
+
+        
     </header>
 <main>
 <?php

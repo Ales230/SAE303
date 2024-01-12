@@ -11,14 +11,21 @@ header {
     height: 15vh;
     box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
     position: sticky;
-            top: 0; /* Position fixe en haut de la page */
-            z-index: 1000;
+    top: 0; /* Position fixe en haut de la page */
+    z-index: 1000;
     
 }
 .btn-home{
     text-decoration:none;
     color:white;
     margin-right:1400px;
+    position:absolute;
+    font-size:3rem;
+}
+.btn-danger{
+    text-decoration:none;
+    color:white;
+    margin-left:1200px;
     position:absolute;
     font-size:3rem;
 }

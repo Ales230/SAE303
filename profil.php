@@ -79,14 +79,20 @@ $reservations_adherent = $stmt_reservations->fetchAll(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="Styles/profil.css">
     <link rel="icon" href="Ressources/AC2FL.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Profil</title>
 </head>
 <body>
 <header>
     
-        <a href ="index.php"class="btn-home"  ><i class="ri-home-2-line"></i></a>
+        <a href ="index.php"class="btn-home"  ><i class="ri-home-2-line"></i></a>            
+        <a href="deconnexion.php" class="btn btn-danger"><i class="nav-item">Déconnexion</i></a>
+
+
+                
         <h1>Mon profil</h1>
         
         
@@ -104,7 +110,7 @@ $reservations_adherent = $stmt_reservations->fetchAll(PDO::FETCH_ASSOC);
             </tr>
             <tr>
                 <th>Numéro de téléphone</th>
-                <td><input type="text" name="telephone" value="<?php echo $adherent['telephone']; ?>"></td>
+                <td><input type="number" name="telephone" value="<?php echo $adherent['telephone']; ?>"></td>
             </tr>
             <tr>
                 <th>Adresse</th>
@@ -200,7 +206,15 @@ $reservations_adherent = $stmt_reservations->fetchAll(PDO::FETCH_ASSOC);
     </tbody>
 </table>
 
+<!-- Bouton pour revenir à la page précédente -->
+<button class="submit_class" type="button" onclick="redirectToProfile()">Effectuer une reservation</button>
+    </div>
 
+    <script>
+    function redirectToProfile() {
+        window.location.href = "formulaire_membre.php";
+    }
+</script>
 </main>
 </body>
 </html>
