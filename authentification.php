@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo "Accès non autorisé pour cet utilisateur.";
             }
         } else {
-            echo "Identifiants incorrects";
+            echo "";
         }
     } catch(PDOException $e) {
         echo "Erreur : " . $e->getMessage();
@@ -51,7 +51,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Page</title>
+    <link rel="stylesheet" href="Styles/authentification.css">
+    <link rel="icon" href="Ressources/AC2FL.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Oups !</title>
     <style>
         body {
             font-family: 'Saira Extra Condensed', sans-serif;
@@ -78,15 +82,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </style>
 </head>
 <body>
+<header>
+<a href ="index.php"class="btn-home"  ><i class="ri-home-2-line"></i></a>
+        <h1>Oups ! Une erreur est survenue</h1>
+    </header>
     <div class="container">
-        <header>
-            <h1>Titre de la Page</h1>
-        </header>
+        
+            <h1>Le numéro d'adhérent ou l'e-mail sont incorrectes.</h1>
+        
         
         <!-- Contenu de la page -->
 
         <!-- Bouton pour revenir à la page précédente -->
-        <button onclick="goBack()">Revenir à la page précédente</button>
+        <button class="submit_class" type="submit" form="login_form" onclick="goBack()">Revenir en arrière</button>
     </div>
 
     <script>
@@ -94,5 +102,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             window.history.back();
         }
     </script>
+    <style>
+        body {
+    background: url(Ressources/avion_crash.jpg) no-repeat;
+    background-size:cover;
+    background-position-y: -150px;
+}
+</style>
 </body>
 </html>

@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Ressources/AC2FL.png" type="image/x-icon">
     <link rel="stylesheet" href="Styles/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
     <title>Connexion</title>
 <body>
     <header>
+    <a href ="index.php"class="btn-home"  ><i class="ri-home-2-line"></i></a>
         <h1>Bienvenue !</h1>
     </header>
     <main>
@@ -20,7 +23,7 @@
                 <button class="submit_class" type="submit" form="login_form" >Connexion</button>
             </div>
             <div class="info_div">
-                <p>Vous n'êtes pas adhérent ? <a href="register/reg-form.php">Cliquez ici</a> pour nous contacter.</p>
+                <p>Vous n'êtes pas adhérent ? <a href="register/reg-form.php" class="contact">Cliquez ici</a> pour nous contacter.</p>
             </div>
         </form>
     </main>

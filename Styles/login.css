@@ -11,6 +11,13 @@ header {
     height: 15vh;
     box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
 }
+.btn-home{
+text-decoration:none;
+    color:white;
+    margin-right:1400px;
+    position:absolute;
+    font-size:3rem;
+}
 h1 {
     letter-spacing: 1.5vw;
     font-family: 'system-ui';
@@ -85,11 +92,11 @@ main {
 .submit_class:hover{
     background-color:#FFE6E4;
 }
-a{
+.contact{
     text-decoration: none;
     color:lightcoral;
 }
-a:hover{
+.contact:hover{
     color:red;
 }
 footer {

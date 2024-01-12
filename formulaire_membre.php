@@ -63,6 +63,7 @@ sort($dates_indisponibles_formatted);
     <title>Formulaire de Réservation</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="Styles/formulaire_membre.css">
+    <link rel="icon" href="Ressources/AC2FL.png" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </head>

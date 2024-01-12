@@ -5,6 +5,7 @@ session_start();
 <html lang="fr">
 <head>
 <link rel="stylesheet" href="Styles/remerciement.css">
+<link rel="icon" href="Ressources/AC2FL.png" type="image/x-icon">
     <meta charset="UTF-8">
     <title>Confirmation d'adhésion</title>
 </head>

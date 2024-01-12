@@ -108,3 +108,10 @@ td a {
 td a:hover {
     background-color: #2980b9;
 }
+.btn-home{
+    text-decoration:none;
+    color:white;
+    margin-right:1400px;
+    position:absolute;
+    font-size:3rem;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/style.css">
+    <link rel="icon" href="Ressources/AC2FL.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <title>AC2FL - Aéroclub de Frotey-Les-Lure</title>
@@ -92,32 +93,27 @@
   <div>
   <h1 class="txt_fin"> Bienvenue sur la page d'AC2FL !</h1>
         </div>
-  <div class="containerbird">
-  
-  
-  <div class="bird-container bird-container--one">
-    <div class="bird bird--one"></div>
-  </div>
-  
-  <div class="bird-container bird-container--two">
-    <div class="bird bird--two"></div>
-  </div>
-  
-  <div class="bird-container bird-container--three">
-    <div class="bird bird--three"></div>
-    
-  </div>
-  
-  <div>
-  <img src="Ressources/anim_avion3.gif" class="disp_interactif" alt="Avion">
-        </div>
-  <div class="bird-container bird-container--four">
-    <div class="bird bird--four"></div>
-    
-  </div>
-  
-</div>
-      </div>
+        <section class="ciel stay transparent">
+            <div class="title">
+                <span class="serif">AC2FL</span> <span class="bold">Aéroclub</span>
+            </div>
+            <div class="nuage plan_3"></div>
+            <div class="nuage plan_2"></div>
+            <div class="nuage plan_1"></div>
+            <div class="avion">
+                <div class="helice"></div>
+                <div class="flux_air flux_1"></div>
+                <div class="flux_air flux_2"></div>
+                <div class="flux_air flux_3"></div>
+                <div class="flux_air flux_4"></div>
+            </div>
+        </section>
+
+        <section class="container dark">
+            <div class="row" style="padding: 80px 0;">
+                
+            </div>
+        </section>
 
      
       <div class="container-fluid p-0" data-section="slide03">
@@ -997,6 +993,34 @@ echo $form->getForm(); // Affiche le formulaire
   </div>
   
 </div>
+
+        <script>
+        var enVol = false;
+            function fly_away(){
+                if(enVol === false && $(window).scrollTop() != 0){
+                    enVol = true;
+                    $('.ciel').removeClass('stay');
+                    $('.ciel').addClass('away');
+
+                    setTimeout(function(){ stay() }, 4000);
+                }
+            }
+            function stay(){
+                if(enVol === true){
+                    enVol = false;
+                    $('.ciel').removeClass('away');
+                    $('.ciel').addClass('stay');
+                }
+            }
+
+            $(document).ready(function(){
+                fly_away();
+                $(window).scroll(function() {
+                    fly_away();
+                });
+
+            });
+            </script>
   <!-- Footer -->
   <footer id="footer" class="footer-bs">
     <div class="row">

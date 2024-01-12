@@ -77,12 +77,19 @@ $reservations_adherent = $stmt_reservations->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="Styles/profil.css">
+    <link rel="icon" href="Ressources/AC2FL.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Profil</title>
 </head>
 <body>
 <header>
+    
+        <a href ="index.php"class="btn-home"  ><i class="ri-home-2-line"></i></a>
         <h1>Mon profil</h1>
+        
+        
     </header>
 <main>
     <form method="post" action="profil.php">
