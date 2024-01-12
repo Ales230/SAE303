@@ -1052,7 +1052,7 @@ echo $form->getForm(); // Affiche le formulaire
             <!-- Liens modaux -->
             <li><a class="footer-title"href="#" data-toggle="modal" data-target="#aProposModal">À propos</a></li>
             <li><a class="footer-title"href="#" data-toggle="modal" data-target="#confidentialiteModal">Politique de confidentialité</a></li>
-            <li><a class="footer-title"href="#">Contacts</a></li>
+            <li><a class="footer-title"href="#footer">Contacts</a></li>
           </ul>
         </div>
       </div>
