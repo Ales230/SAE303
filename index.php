@@ -146,7 +146,7 @@
                 <!-- Ajout d'un div pour le texte avec les classes "carousel-caption" pour le style de Bootstrap -->
                 <div class="carousel-caption d-none d-md-block">
                     <h3 class="animate__animated animate__fadeIn">Notre équipe est prête à vous accueillir</h3>
-                    <a href="#équipe">  <button type="button" class="btn btn-secondary">Voir l'équipe</button>  </a>
+                    <a href="#equipe">  <button type="button" class="btn btn-secondary">Voir l'équipe</button>  </a>
                 </div>
             </div>
         </div>
